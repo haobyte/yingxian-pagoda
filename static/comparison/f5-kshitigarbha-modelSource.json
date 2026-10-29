@@ -1,0 +1,122 @@
+{
+  "key": "f5-kshitigarbha",
+  "date": "2026-10-29",
+  "runtime_file": "static/models/statues/f5-kshitigarbha.glb",
+  "raw_file": "tripo-test/generated/fdd56f8f-5790-4251-a257-6f1c5abe9e05.glb",
+  "raw_sha256": "e32f85f389226fa986c10d0c0d60b4f0a9a70abec3c16a1fa7ebaa6330390a6b",
+  "result_page_id": "fdd56f8f-5790-4251-a257-6f1c5abe9e05",
+  "model_asset_uuid": "fef64d3d-dcc7-478e-b543-99bc9e4d0872",
+  "input": "tripo-test/ai-generated-reference/2026-10-28/f5-kshitigarbha-ai-generated-present-front-v1.png",
+  "input_source": "tripo-test/ai-generated-reference/2026-10-28/f5-kshitigarbha-ai-generated-present-front-v1.source.json",
+  "input_nature": "AI-generated present-appearance frontal reference; not a photograph",
+  "generation_parameters": {
+    "model": "H3.0",
+    "texture_quality": "2K",
+    "texture": true,
+    "ai_completion": true,
+    "delighting": false,
+    "pbr": false,
+    "topology": "triangles",
+    "face_limit": 2000000
+  },
+  "raw_source_record": "tripo-test/generated/fdd56f8f-5790-4251-a257-6f1c5abe9e05.source.json",
+  "processing": {
+    "tool": "Blender 5.2.2 LTS",
+    "script": "tools/prepare-tripo-runtime.py",
+    "triangles_before": 1539594,
+    "triangles_after": 80000,
+    "decimate_target": 80000,
+    "blender_bounds_before_normalization": [
+      [
+        -0.3157828152179718,
+        -0.33196601271629333,
+        -0.49881336092948914
+      ],
+      [
+        0.3137703239917755,
+        0.33373358845710754,
+        0.4996732175350189
+      ]
+    ],
+    "blender_transform": [
+      [
+        1.0015157461166382,
+        0,
+        0,
+        0.0010077707702293992
+      ],
+      [
+        0,
+        1.0015157461166382,
+        0,
+        -0.000885127461515367
+      ],
+      [
+        0,
+        0,
+        1.0015157461166382,
+        0.49956944584846497
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "runtime_coordinates": "Y-up, front +X, height 1, bottom y=0, centered XZ",
+    "texture": "Preserve embedded base-color image; no rebake or resizing",
+    "geometry_added": false,
+    "raw_preserved": true
+  },
+  "limitations": [
+    "正面视角及遮挡细节由 AI 推断，非实物测绘",
+    "生成图不能反证造像身份、手印或历史原色",
+    "推测复原未获颜料检测或初建图像验证，不代表已证实的辽代原貌",
+    "参考图为戴冠菩萨，与运行配置僧形描述不一致；按照片保留形制，地藏身份待核实",
+    "Back and occluded geometry inferred by Tripo"
+  ],
+  "sha256": "aa2b89814f01328d1a804d46b8522d21f3dd5f381c9ee54ed4975860dafbd769",
+  "bytes": 3444308,
+  "verification": {
+    "raw_unchanged": true,
+    "texture_exact_bytes": true,
+    "height_one": true,
+    "bottom_zero": true,
+    "center_xz": true,
+    "no_compression_decoder_required": true
+  },
+  "runtime_geometry": {
+    "sha256": "aa2b89814f01328d1a804d46b8522d21f3dd5f381c9ee54ed4975860dafbd769",
+    "bytes": 3444308,
+    "triangles": 80000,
+    "images": [
+      {
+        "sha256": "8b96cc3345817f8d2cdd14be3e2bcab083f4c926de8fc847170cb12f5b519e1f",
+        "dimensions": [
+          2048,
+          2048
+        ]
+      }
+    ],
+    "bounds": [
+      [
+        -0.31525370478630066,
+        0,
+        -0.33335432410240173
+      ],
+      [
+        0.31525367498397827,
+        1,
+        0.33335432410240173
+      ]
+    ],
+    "nodes": [
+      {
+        "mesh": 0,
+        "name": "tripo_node_fef64d3d-dcc7-478e-b543-99bc9e4d0872"
+      }
+    ],
+    "extensions": []
+  }
+}

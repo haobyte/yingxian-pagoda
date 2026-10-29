@@ -1,0 +1,32 @@
+{
+  "file": "f4-elephant-groom-ai-generated-present-front-v1.png",
+  "subject": "四层象奴",
+  "variant": "现貌参考重建",
+  "ai_generated": true,
+  "is_documentary_photo": false,
+  "historical_reconstruction_verified": false,
+  "generator": "OpenAI built-in image_gen",
+  "generated_on": "2026-10-28",
+  "width": 1024,
+  "height": 1536,
+  "references": [
+    {
+      "path": "tripo-test/picks/21-f4-elephant-handler.jpg",
+      "sha256": "5f885c2cb3968f391ac573e313d9d0343a0b66bab8be24348748cdf17bf3ac94"
+    }
+  ],
+  "prompt": "Create ONE high-resolution photorealistic reference-guided reconstruction of the SINGLE specific Yingxian Wooden Pagoda sculpture in the attached reference, not a generic Buddhist statue. Portrait 1024x1536. Strict centered straight frontal near-orthographic camera at sculpture mid-height, symmetrical framing, FULL requested figure and attached base with 5% margin, no cropping. Neutral light-gray seamless studio backdrop, soft even diffuse illumination, sharp face and exact fingers, all in focus. Preserve the exact sculpted facial proportions, eyes, smile, body pose, garment folds, headdress, number of arms, hand positions and visible iconographic details of this specific reference. Material is realistic handmade ancient painted clay sculpture, mineral pigments and gilding, NEVER living human skin, wax, glossy plastic or cartoon/CGI. Clear shape separation suitable for 3D modeling. Isolate from temple, other figures, columns, halos not actually present, offerings and photographic clutter. No captions, lettering, watermark, panels or collage. Image is an AI interpretation, not documentary evidence; metadata outside image will say this. Subject-specific visual observations: Single robust youthful male attendant sculpture, TWO small tufts/topknot shapes, strongly round childlike face, slightly raised chin, ear ornaments. Wide lunge: RIGHT leg viewer LEFT extended diagonally, LEFT viewer RIGHT bent. RIGHT arm viewer LEFT angled down fist low, LEFT viewer RIGHT bends outward fist higher near waist. Crossed pale tunic with central knot and blue pigment remnant, diagonal wrap, wide rectangular buckle belt, layered long skirt tabs and boots. Clearly preserve distinct round face from photo, raised chin and exact pose. No reins or weapons invented. Include whole boots where clipped as conservative completion, no surrounding figures/elephant. Restoration restrained warm cream and ochre brown with small muted blue at surviving traces, natural painted clay skin NOT gold.\nPRESENT-CONDITION reconstruction: faithfully retain the original observed weathering, worn gilding, exposed ground, discoloration, chips and faded paint distribution. Improve frontal clarity and recover visible shapes without beautifying or renewing the surface. Weathered patches must stay comparable to the reference.",
+  "refinement_prompt": null,
+  "refinement_inputs": [],
+  "generated_original_sha256": "710ebc685aca428359c011061c26cab622888544e2501bb4dc7303edeeb8db1c",
+  "file_sha256": "691b922905cf9cc8a2e2457fe8d85a8bbcce850823c6c1fb82c9a8ae11426038",
+  "local_processing": "仅添加 PNG AI 生成文字元数据；图像像素未改变",
+  "scope": "象奴全身，边缘截断的靴足作保守补全；不含背景菩萨与象",
+  "identity_status": "项目配置象奴；狮奴/象奴图像近似，按各自源照片分别重建",
+  "limitations": [
+    "AI 生成的建模参考，不是实拍；正面角度与遮挡细节含推测。",
+    "复原版依据现存形制和残留色彩推测，不代表已证实的辽代初建原貌。",
+    "面部、手指、纹样和座下支承仍需实物或高清照片复核。"
+  ],
+  "review": "已逐图目视核对构图、主要手位、臂数、头饰和座式；保留生成解释误差，不作为测绘。"
+}

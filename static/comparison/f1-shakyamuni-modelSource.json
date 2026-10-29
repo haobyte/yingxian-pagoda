@@ -1,0 +1,57 @@
+{
+  "task_id": "ce613403-fa65-4af4-b041-a0e96d35c7a6",
+  "formal_key": "f1-shakyamuni",
+  "identity": "一层释迦牟尼大佛",
+  "mapping_status": "confirmed",
+  "identity_basis": "项目配置与本地参考图的视觉对应；不是独立文物鉴定",
+  "raw_file": "tripo-test/generated/ce613403-fa65-4af4-b041-a0e96d35c7a6.glb",
+  "formal_file": "static/models/statues/f1-shakyamuni.glb",
+  "raw_sha256": "5178e6fe166117c0f2b33f35da263cff4a20bf17b13558c1cbb43d98d177c654",
+  "formal_sha256": "2d2c34cc26d0dcec8e40f2500e856805dce342a585f3e7c3e1ca77700123cfd6",
+  "preview_files": [
+    "tripo-test/generated-preview/ce613403_0.png",
+    "tripo-test/generated-preview/ce613403_1.png",
+    "tripo-test/generated-preview/ce613403_2.png",
+    "tripo-test/generated-preview/ce613403_3.png"
+  ],
+  "visually_corresponding_reference": "tripo-test/f1-shakyamuni/A-front.png",
+  "generation_input_status": "视觉相符；未找到上传或生成任务日志，不能证明此文件就是实际输入",
+  "visual_observations": "金色面部、红袈裟、右手抬起，生成体不含完整莲座。",
+  "evidence": {
+    "base_color_texture_raw_sha256": "3712ff559d14319c282fa9a7b74cd2fb50574ba824760b441bf66de9ada73f92",
+    "base_color_texture_formal_sha256": "da237de9528402424a22c2f4a1b7642aa874b4b29bf688b9a949618d7b10ce96",
+    "base_color_texture_exact_bytes": false,
+    "raw_base_color_dimensions": [
+      4096,
+      4096
+    ],
+    "formal_base_color_dimensions": [
+      2048,
+      2048
+    ],
+    "base_color_rgb_mae_128": 0.368876,
+    "mae_method": "Pillow RGB; resize 128x128 BICUBIC; mean absolute channel error on 0..255",
+    "raw_extent_height_normalized": [
+      0.49778220517300936,
+      1,
+      0.6827696767130225
+    ],
+    "formal_extent_height_normalized": [
+      0.49782294034957886,
+      1,
+      0.6827555298805237
+    ],
+    "max_normalized_extent_difference": 0.00004073517656949521,
+    "raw_triangles": 1995649,
+    "formal_triangles": 120000,
+    "raw_generator": "gltfpack 1.2",
+    "formal_generator": "Khronos glTF Blender I/O v5.2.40"
+  },
+  "audit_date": "2026-10-28",
+  "unknowns": [
+    "生成提示词与生成参数",
+    "原始下载日期",
+    "实际上传输入文件",
+    "具体后处理操作日志"
+  ]
+}

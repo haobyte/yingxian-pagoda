@@ -1,0 +1,22 @@
+{
+  "name": "yingxian-pagoda",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Hao (haobyte)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5184",
+    "build": "vite build",
+    "check": "node tools/check-full.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 5184",
+    "test": "node tools/full-smoke.mjs",
+    "test:atlas": "node tools/full-smoke.mjs --atlas-only"
+  },
+  "dependencies": {
+    "three": "0.180.0",
+    "vite": "7.3.7"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

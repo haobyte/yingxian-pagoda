@@ -1,0 +1,32 @@
+{
+  "file": "f2-manjushri-lion-ai-generated-present-front-v1.png",
+  "subject": "二层文殊菩萨（四臂形）",
+  "variant": "现貌参考重建",
+  "ai_generated": true,
+  "is_documentary_photo": false,
+  "historical_reconstruction_verified": false,
+  "generator": "OpenAI built-in image_gen",
+  "generated_on": "2026-10-28",
+  "width": 1024,
+  "height": 1536,
+  "references": [
+    {
+      "path": "tripo-test/picks/8-f2-bodhisattva-on-lion.jpg",
+      "sha256": "83fd31ecba30d8335c99247514a33e3799f1a72c84c8f8fe5d55e168753d7924"
+    }
+  ],
+  "prompt": "Create ONE high-resolution photorealistic reference-guided reconstruction of the SINGLE specific Yingxian Wooden Pagoda sculpture in the attached reference, not a generic Buddhist statue. Portrait 1024x1536. Strict centered straight frontal near-orthographic camera at sculpture mid-height, symmetrical framing, FULL requested figure and attached base with 5% margin, no cropping. Neutral light-gray seamless studio backdrop, soft even diffuse illumination, sharp face and exact fingers, all in focus. Preserve the exact sculpted facial proportions, eyes, smile, body pose, garment folds, headdress, number of arms, hand positions and visible iconographic details of this specific reference. Material is realistic handmade ancient painted clay sculpture, mineral pigments and gilding, NEVER living human skin, wax, glossy plastic or cartoon/CGI. Clear shape separation suitable for 3D modeling. Isolate from temple, other figures, columns, halos not actually present, offerings and photographic clutter. No captions, lettering, watermark, panels or collage. Image is an AI interpretation, not documentary evidence; metadata outside image will say this. Subject-specific visual observations: Important: this particular photographed statue has FOUR ARMS, preserve exactly four, not two! Outer two arms spread near shoulders elbows bent palms upward; inner RIGHT viewer LEFT raised at chest finger circle, inner LEFT viewer RIGHT palm up at lap. Crown red gold green jewel, pale worn face, blue shawl yellow knee garment necklace green belt. Crosslegged on vivid lotus. Include small reclining BLUE LION supporting lotus, front lion head open mouth curled mane, compact geometric tier base. Do not enlarge animal into huge mount. Match photo anatomy and attachments.\nPRESENT-CONDITION reconstruction: faithfully retain the original observed weathering, worn gilding, exposed ground, discoloration, chips and faded paint distribution. Improve frontal clarity and recover visible shapes without beautifying or renewing the surface. Weathered patches must stay comparable to the reference.",
+  "refinement_prompt": null,
+  "refinement_inputs": [],
+  "generated_original_sha256": "70819fd010469dd69143a700cfbcd6a1489bbb50a8b37ccb92ba36670d2ed1f0",
+  "file_sha256": "7294285637167b88550bd34889eb8ffa73b060fe5cc2968115db80e85637c99b",
+  "local_processing": "仅添加 PNG AI 生成文字元数据；图像像素未改变",
+  "scope": "四臂菩萨全身、莲座、小狮形支承与基座",
+  "identity_status": "沿用项目与选图称谓；视觉对应不等于独立宗教身份鉴定",
+  "limitations": [
+    "AI 生成的建模参考，不是实拍；正面角度与遮挡细节含推测。",
+    "复原版依据现存形制和残留色彩推测，不代表已证实的辽代初建原貌。",
+    "面部、手指、纹样和座下支承仍需实物或高清照片复核。"
+  ],
+  "review": "已逐图目视核对构图、主要手位、臂数、头饰和座式；保留生成解释误差，不作为测绘。"
+}

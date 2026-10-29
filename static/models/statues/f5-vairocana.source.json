@@ -1,0 +1,116 @@
+{
+  "key": "f5-vairocana",
+  "date": "2026-10-29",
+  "runtime_file": "static/models/statues/f5-vairocana.glb",
+  "raw_file": "tripo-test/generated/2056a28a-1ce2-41a8-be05-d80b605cfe1e.glb",
+  "raw_sha256": "d7cf1fda2e45807311216adacbca185729658ef71e9d3dc129430e29106edeac",
+  "result_page_id": "2056a28a-1ce2-41a8-be05-d80b605cfe1e",
+  "model_asset_uuid": "8d3b913a-aa40-4d13-b14b-f2520c84eda5",
+  "input": "tripo-test/ai-generated-reference/2026-10-28/f5-vairocana-ai-generated-present-front-v1.png",
+  "input_source": "tripo-test/ai-generated-reference/2026-10-28/f5-vairocana-ai-generated-present-front-v1.source.json",
+  "input_nature": "AI-generated present-appearance frontal reference; not a photograph",
+  "generation_parameters": {
+    "model": "H3.0",
+    "texture_quality": "2K",
+    "texture": true,
+    "ai_completion": true
+  },
+  "raw_source_record": "tripo-test/generated/2056a28a-1ce2-41a8-be05-d80b605cfe1e.source.json",
+  "processing": {
+    "tool": "Blender 5.2.2 LTS",
+    "script": "tools/prepare-tripo-runtime.py",
+    "triangles_before": 1564422,
+    "triangles_after": 80000,
+    "decimate_target": 80000,
+    "blender_bounds_before_normalization": [
+      [
+        -0.35368651151657104,
+        -0.3580063283443451,
+        -0.49948662519454956
+      ],
+      [
+        0.3553714156150818,
+        0.3554878830909729,
+        0.5002601742744446
+      ]
+    ],
+    "blender_transform": [
+      [
+        1.0002533197402954,
+        0,
+        0,
+        -0.0008426654385402799
+      ],
+      [
+        0,
+        1.0002533197402954,
+        0,
+        0.001259541604667902
+      ],
+      [
+        0,
+        0,
+        1.0002533197402954,
+        0.4996131658554077
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "runtime_coordinates": "Y-up, front +X, height 1, bottom y=0, centered XZ",
+    "texture": "Preserve embedded base-color image; no rebake or resizing",
+    "geometry_added": false,
+    "raw_preserved": true
+  },
+  "limitations": [
+    "AI-generated present reference; not a photograph or measured reconstruction",
+    "Occluded geometry and back are inferred by Tripo",
+    "Raw preview GLB; production alignment and scale not yet applied"
+  ],
+  "sha256": "24cc976f9d1438afa82a23938bd55612756ebcb871a319a037fb14973ff0f07a",
+  "bytes": 3385112,
+  "verification": {
+    "raw_unchanged": true,
+    "texture_exact_bytes": true,
+    "height_one": true,
+    "bottom_zero": true,
+    "center_xz": true,
+    "no_compression_decoder_required": true
+  },
+  "runtime_geometry": {
+    "sha256": "24cc976f9d1438afa82a23938bd55612756ebcb871a319a037fb14973ff0f07a",
+    "bytes": 3385112,
+    "triangles": 80000,
+    "images": [
+      {
+        "sha256": "99a93ddda15b931cb439e251671b8ce7f84e5c5a1576b9c222cbb3f71d366841",
+        "dimensions": [
+          2048,
+          2048
+        ]
+      }
+    ],
+    "bounds": [
+      [
+        -0.35461875796318054,
+        0,
+        -0.3568374812602997
+      ],
+      [
+        0.35461878776550293,
+        1,
+        0.3568374812602997
+      ]
+    ],
+    "nodes": [
+      {
+        "mesh": 0,
+        "name": "tripo_node_8d3b913a-aa40-4d13-b14b-f2520c84eda5"
+      }
+    ],
+    "extensions": []
+  }
+}

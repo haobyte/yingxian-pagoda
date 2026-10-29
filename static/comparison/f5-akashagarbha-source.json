@@ -1,0 +1,56 @@
+{
+  "file": "f5-akashagarbha-ai-generated-present-front-v1.png",
+  "subject": "虚空藏菩萨",
+  "variant": "现貌参考重建",
+  "ai_generated": true,
+  "is_documentary_photo": false,
+  "historical_reconstruction_verified": false,
+  "generator": "OpenAI built-in image_gen",
+  "generated_on": "2026-10-28",
+  "width": 1024,
+  "height": 1536,
+  "references": [
+    {
+      "path": "tripo-test/picks/13-f5-akashagarbha.png",
+      "role": "subject_reference",
+      "sha256": "1f17f656929ab17ac1eaeef6d2e0600428b3e9c4dd399ce707747707bf97e493"
+    },
+    {
+      "path": "tripo-test/ai-generated-reference/2026-10-28/f5-vairocana-ai-generated-present-front-v1.png",
+      "role": "style_only",
+      "sha256": "6b2e267b83063fa6788c669d2b6ca165684552cef7821878350a7025cff31d80"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Generate ONE portrait 1024x1536 photorealistic museum reference visualization of the specific Yingxian Wooden Pagoda fifth-floor painted clay statue in reference image 1. Reference image 2 is STYLE ONLY, never copy its Buddha identity or mudra. Exactly centered straight frontal elevation, camera at mid-height, no low angle, full seated body including crown/hair, both hands and crossed knees, closely attached lotus seat and simple immediate seat board visible with margins; omit tall lower pedestal. Neutral seamless light gray background, soft balanced diffuse lighting, subtle contact shadow, sharp tactile clay and mineral pigments, no flesh or plastic CGI. Preserve individual face proportions, sculpted garment, ornaments and photographed hand gestures rather than generic iconography. Remove temple and all other figures. No text, watermark, halo, collage or diptych. AI visualization not documentary evidence. Unseen details inferred conservatively. Subject label (provisional where noted): 虚空藏菩萨. Tall five-leaf crown, scalloped shoulder cape with pale blue traces; left hand viewer right raised palm outward, right hand on knee. PRESENT CONDITION: preserve photographed worn brown gray-beige clay, patchy pale ground, faded pigment remnants, chips and irregular abrasion. Do not restore or add vivid color.",
+  "refinement_prompt": null,
+  "generated_original_sha256": "dd3b079213689c742c43bd25d89267e89187928f2c2b0cbff44970ca6c9b50cb",
+  "file_sha256": "a4732230a31bee9bdb2c6088952b68f7a2dba58cc631caba390147f6bddc626e",
+  "local_processing": "仅插入 PNG AI 文字元数据，IDAT 图像数据未改变",
+  "scope": "坐姿像身、紧接莲座和简化座板；不含高台基",
+  "limitations": [
+    "正面视角及遮挡细节由 AI 推断，非实物测绘",
+    "生成图不能反证造像身份、手印或历史原色",
+    "推测复原未获颜料检测或初建图像验证，不代表已证实的辽代原貌"
+  ],
+  "review": "已逐张目视检查构图、彩绘状态与主要手位；仍有 AI 解释误差，不作为实物测绘",
+  "generation_history": [
+    {
+      "stage": "initial",
+      "prompt": "Use case: scientific-educational. Generate ONE portrait 1024x1536 photorealistic museum reference visualization of the specific Yingxian Wooden Pagoda fifth-floor painted clay statue in reference image 1. Reference image 2 is STYLE ONLY, never copy its Buddha identity or mudra. Exactly centered straight frontal elevation, camera at mid-height, no low angle, full seated body including crown/hair, both hands and crossed knees, closely attached lotus seat and simple immediate seat board visible with margins; omit tall lower pedestal. Neutral seamless light gray background, soft balanced diffuse lighting, subtle contact shadow, sharp tactile clay and mineral pigments, no flesh or plastic CGI. Preserve individual face proportions, sculpted garment, ornaments and photographed hand gestures rather than generic iconography. Remove temple and all other figures. No text, watermark, halo, collage or diptych. AI visualization not documentary evidence. Unseen details inferred conservatively. Subject label (provisional where noted): 虚空藏菩萨. Tall five-leaf crown, scalloped shoulder cape with pale blue traces; left hand viewer right raised palm outward, right hand on knee. PRESENT CONDITION: preserve photographed worn brown gray-beige clay, patchy pale ground, faded pigment remnants, chips and irregular abrasion. Do not restore or add vivid color.",
+      "sha256": "dd3b079213689c742c43bd25d89267e89187928f2c2b0cbff44970ca6c9b50cb",
+      "inputs": [
+        {
+          "path": "tripo-test/picks/13-f5-akashagarbha.png",
+          "role": "subject_reference",
+          "sha256": "1f17f656929ab17ac1eaeef6d2e0600428b3e9c4dd399ce707747707bf97e493"
+        },
+        {
+          "path": "tripo-test/ai-generated-reference/2026-10-28/f5-vairocana-ai-generated-present-front-v1.png",
+          "role": "style_only",
+          "sha256": "6b2e267b83063fa6788c669d2b6ca165684552cef7821878350a7025cff31d80"
+        }
+      ],
+      "selection": "最终选用"
+    }
+  ]
+}

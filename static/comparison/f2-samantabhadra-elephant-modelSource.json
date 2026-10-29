@@ -1,0 +1,57 @@
+{
+  "task_id": "53f03f75-b5c0-48d2-90bb-f74c5f0baaf8",
+  "formal_key": "f2-samantabhadra-elephant",
+  "identity": "二层普贤（项目配置为骑象）",
+  "mapping_status": "confirmed",
+  "identity_basis": "项目配置与本地参考图的视觉对应；不是独立文物鉴定",
+  "raw_file": "tripo-test/generated/53f03f75-b5c0-48d2-90bb-f74c5f0baaf8.glb",
+  "formal_file": "static/models/statues/f2-samantabhadra-elephant.glb",
+  "raw_sha256": "a28c5b10e6cad8183020bcc19a0a5e24b8de61b38ada681a7b5ba76ab9da134c",
+  "formal_sha256": "53947713ffbcad86550860b2f051fbbf4b4874e3b8c22070ffe8a26e4d5a8920",
+  "preview_files": [
+    "tripo-test/generated-preview/53f03f75_0.png",
+    "tripo-test/generated-preview/53f03f75_1.png",
+    "tripo-test/generated-preview/53f03f75_2.png",
+    "tripo-test/generated-preview/53f03f75_3.png"
+  ],
+  "visually_corresponding_reference": "tripo-test/picks/7-f2-bodhisattva-on-elephant.jpg",
+  "generation_input_status": "视觉相符；未找到上传或生成任务日志，不能证明此文件就是实际输入",
+  "visual_observations": "绿色披帛、红色腿部、黄色冠及彩色莲座相符；生成模型没有完整大象。",
+  "evidence": {
+    "base_color_texture_raw_sha256": "6fa494e37b5b36a023f20b521bc8f4318246f02b90876d99ebecfb510fadd28c",
+    "base_color_texture_formal_sha256": "6fa494e37b5b36a023f20b521bc8f4318246f02b90876d99ebecfb510fadd28c",
+    "base_color_texture_exact_bytes": true,
+    "raw_base_color_dimensions": [
+      2048,
+      2048
+    ],
+    "formal_base_color_dimensions": [
+      2048,
+      2048
+    ],
+    "base_color_rgb_mae_128": 0,
+    "mae_method": "Pillow RGB; resize 128x128 BICUBIC; mean absolute channel error on 0..255",
+    "raw_extent_height_normalized": [
+      0.6616245814397061,
+      1,
+      0.6167199422936791
+    ],
+    "formal_extent_height_normalized": [
+      0.6616997718811035,
+      1,
+      0.6167217493057251
+    ],
+    "max_normalized_extent_difference": 0.00007519044139736586,
+    "raw_triangles": 1500812,
+    "formal_triangles": 79999,
+    "raw_generator": "gltfpack 1.2",
+    "formal_generator": "Khronos glTF Blender I/O v5.2.40"
+  },
+  "audit_date": "2026-10-28",
+  "unknowns": [
+    "生成提示词与生成参数",
+    "原始下载日期",
+    "实际上传输入文件",
+    "具体后处理操作日志"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "file": "f4-manjushri-ai-generated-restoration-hypothesis-front-v1.png",
+  "subject": "四层文殊菩萨",
+  "variant": "风化前原貌推测复原",
+  "ai_generated": true,
+  "is_documentary_photo": false,
+  "historical_reconstruction_verified": false,
+  "generator": "OpenAI built-in image_gen",
+  "generated_on": "2026-10-28",
+  "width": 1024,
+  "height": 1536,
+  "references": [
+    {
+      "path": "tripo-test/picks/11-f4-manjushri.jpg",
+      "sha256": "a61fe574114afa88a41a69db5b6391962a6c1c53b6c92e7c768438d63a4cb46e"
+    }
+  ],
+  "prompt": "CRITICAL: NEWLY COMPLETED CLEAN POLYCHROME SCULPTURE, before any decay. NOT an aged antique. No chipped paint anywhere, including base and extremities. Create ONE high-resolution photorealistic reference-guided reconstruction of the SINGLE specific Yingxian Wooden Pagoda sculpture in the attached reference, not a generic Buddhist statue. Portrait 1024x1536. Strict centered straight frontal near-orthographic camera at sculpture mid-height, symmetrical framing, FULL requested figure and attached base with 5% margin, no cropping. Neutral light-gray seamless studio backdrop, soft even diffuse illumination, sharp face and exact fingers, all in focus. Preserve the exact sculpted facial proportions, eyes, smile, body pose, garment folds, headdress, number of arms, hand positions and visible iconographic details of this specific reference. Material is realistic handmade ancient painted clay sculpture, mineral pigments and gilding, NEVER living human skin, wax, glossy plastic or cartoon/CGI. Clear shape separation suitable for 3D modeling. Isolate from temple, other figures, columns, halos not actually present, offerings and photographic clutter. No captions, lettering, watermark, panels or collage. Image is an AI interpretation, not documentary evidence; metadata outside image will say this. Subject-specific visual observations: Crowned seated bodhisattva, openwork triangular scroll crown with central gem and side tassels, elongated pale face. RIGHT hand viewer LEFT raised at chest thumb and finger contact; LEFT viewer RIGHT low at lap palm up finger circle. RIGHT leg folded horizontal with visible sole near center-left, LEFT leg hangs down on viewer RIGHT with bare foot. Preserve asymmetrical semi-seated pose. Chest scroll collar, long hanging scarves, modest gray cream brown robes with faint green hints. Include body, visible lotus seat and short plinth beneath dangling foot only; DO NOT invent the full lion hidden/cropped in reference. No sword, no book. Restoration subdued ivory ochre/mineral green based traces, avoid unsupported bright red-blue fantasy or all-gold body.\nHYPOTHETICAL PRE-WEATHERING appearance: depict this exact sculpture freshly completed, before deterioration. Repair only damage, keep all original geometry. Continuous CLEAN paint surfaces, intact gilding where evidenced, NO weathering, NO dirt speckles, NO dark stains, NO chips, NO cracks, NO peeling, NO patina. Existing pale exposed ground patches on face/chest that clearly interrupt gilding should become continuous subdued gold. Preserve subtle handmade clay grain and brush texture, not distressed texture. Conservatively reconstruct only colors evidenced by surviving pigment; no arbitrary elaborate patterns, ornaments, fantasy jewels or newly invented objects. This is plausible pre-weathering appearance, not a claim of verified original Liao paint. Critical surface requirement: remove the reference's dirt and distressed look from EVERY surface including clothes, base and animal. Fresh continuous pigment; subtle handmade brush marks only. Use no artificial aging. Maintain realistic non-glossy sculpture finish.",
+  "refinement_prompt": null,
+  "refinement_inputs": [],
+  "generated_original_sha256": "ef19853e6c24b0daeba25c1f26b76335d04217f08db562d9727046e76d40795a",
+  "file_sha256": "7c1b1f64336703f2e906a04be9c953565b1419c9ae6234b1aa38574de869edd8",
+  "local_processing": "仅添加 PNG AI 生成文字元数据；图像像素未改变",
+  "scope": "菩萨全身、下垂足、贴身莲座与短座；不补造照片未完整显示的狮身",
+  "identity_status": "沿用项目及参考图称谓",
+  "limitations": [
+    "AI 生成的建模参考，不是实拍；正面角度与遮挡细节含推测。",
+    "复原版依据现存形制和残留色彩推测，不代表已证实的辽代初建原貌。",
+    "面部、手指、纹样和座下支承仍需实物或高清照片复核。"
+  ],
+  "review": "已逐图目视核对构图、主要手位、臂数、头饰和座式；保留生成解释误差，不作为测绘。"
+}

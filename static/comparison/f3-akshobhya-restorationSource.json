@@ -1,0 +1,34 @@
+{
+  "file": "f3-akshobhya-ai-generated-restoration-hypothesis-front-v1.png",
+  "subject": "三层东方阿閦佛",
+  "variant": "风化前原貌推测复原",
+  "ai_generated": true,
+  "is_documentary_photo": false,
+  "historical_reconstruction_verified": false,
+  "generator": "OpenAI built-in image_gen",
+  "generated_on": "2026-10-28",
+  "width": 1024,
+  "height": 1536,
+  "references": [
+    {
+      "path": "tripo-test/picks/18-f3-akshobhya.jpg",
+      "sha256": "aaee05803ec97040bbefe0886caa9a7599b4618d5d13ec3896562d758deb1a71"
+    }
+  ],
+  "prompt": "Create ONE high-resolution portrait 1024x1536 photorealistic frontal reference image for image-to-3D modeling, based on the supplied actual photograph of a specific Yingxian Wooden Pagoda clay statue. The identity, facial proportions, seated anatomy, hands and drapery must be this particular reference statue, not a generic Buddhist statue. This is AI-generated reference imagery, not a documentary photograph. Precisely straight-on front view, no three-quarter angle, camera centered at mid-height, upright axis, near orthographic/long-lens perspective. Show full sculpture and specified attached seat with complete top and bottom and narrow even margins. Neutral seamless light gray background, soft even diffuse studio light, subtle grounding shadow. Detailed real hand-modeled painted clay, matte mineral pigments and plausible gold leaf, physically believable surface grain, NOT living skin, plastic, cartoon or shiny CGI. Face and both hands clearly readable and in focus. No temple architecture, neighbors, altar offerings, measuring marks, halo, captions or watermarks; AI identification will be in filename, PNG metadata and sidecar. Output a single image only, not a collage.\nSpecific subject: third-floor EASTERN AKSHOBHYA. Preserve slightly full cheeks and small closed lips, low small curled-hair ushnisha, long ears, open robe exposing broad gilded chest, full crossed legs. CRITICAL: statue's RIGHT hand (viewer LEFT) rests over the right knee with fingers pointing DOWN, back of hand facing viewer, earth-touching gesture exactly as the photograph. Its LEFT hand (viewer RIGHT) is gently cupped near the lower abdomen/palm facing upward as in reference. No raised blessing hand and no wisdom-fist at chest. The robe is loosely draped with broad sleeves and a pale waistband, not ornate jewels. Include the full worn round-petal lotus and the compact polygonal layered base with squat elephant-like supports visible in the photograph. Retain the particular base silhouette and supports; don't invent a huge standing elephant or an extravagant throne.\nVERSION B, HYPOTHETICAL ORIGINAL PRE-WEATHERING CONDITION. Reconstruct this EXACT sculpture as freshly completed by historical artisans BEFORE erosion or damage. Preserve facial identity, pose, hand geometry, robe folds and seat shape. Heal missing surfaces, cracks and chips. ALL surfaces are complete and intact: NO worn edges, peeling, faded flecks, dirt, scratches, oxidation, exposed repair ground or distressed antique effect. Restore continuous matte mineral pigment guided conservatively by the remaining traces: warm ivory garment areas with restrained mineral blue-green and cinnabar-red accents and narrow simple edging; keep decorative density modest, do not introduce complex all-over brocade absent from reference. Restore complete gold leaf on the face, neck, bare chest and hands as suggested by visible gold remains, with deep mineral-blue hair curls. Seat colors may be plausibly continued from traces in subdued red, green and ivory without changing forms. Fresh hand-painted clay should retain fine brush strokes, minute tool irregularities and very subtle gold-leaf seams where gilded, but NO simulated age. Naturally rich pigments, never neon; soft gold not mirror chrome, no toy/plastic shine. Color reconstruction is explicitly hypothetical and is NOT evidence of exact Liao-era original appearance.",
+  "refinement_prompt": "Edit the first image, an AI-generated hypothetical restoration of 三层东方阿閦佛. The second image is the original photograph, ONLY to check the distinctive identity, pose and small hair/crown shape; do NOT reintroduce its damage. Preserve first image's frontal composition, exact face proportions, expression, hand gestures, finger positions, seated posture, garment folds, pedestal geometry, existing color fields, gray background and light. Main correction: render it in a freshly completed, entirely UNWEATHERED condition. Remove every scratch, cracked paint line, faded fleck, tan dirt streak, peeling area, rubbed edge and antique patina. All ivory fields must be clean warm ivory, all cinnabar-red and blue-green fields continuous matte mineral pigment, no brown distress overlay. Gold leaf complete and clean with only minute leaf seams, no dark tarnish. Keep very subtle hand-brush and clay grain so this looks like a real freshly painted historical clay sculpture, not porcelain, plastic, living person, CGI or a toy. Preserve existing decorative simplicity, add no new motifs. Keep gilded face/chest/hands, and low tightly curled dark-blue Buddha hair with only the low rounded ushnisha seen in original photo. NO gold lotus crown, petal crown or tall pointed ornament on top; replace any accidentally added petal ornament with the original low curled-hair silhouette. The right hand on viewer LEFT must remain palm-down fingers pointing down over the knee (earth-touching). No text, labels, watermark, added animals or extra objects. Single portrait image, same framing, realistic soft studio photograph.",
+  "refinement_inputs": [
+    "[local path omitted]",
+    "[local path omitted]"
+  ],
+  "generated_original_sha256": "fab4a60863c34496829e941dc5973d36238bb9ba9fd9d9060fd61b5f9a217e0d",
+  "file_sha256": "3a81f9e9be4a86d862bbe9d5223b66d68b9642be0bf9d13b1a68d59f24641484",
+  "local_processing": "仅添加 PNG AI 生成文字元数据；IDAT 图像数据未改变",
+  "scope": "完整坐姿像身、莲座及照片所示象形支承佛座",
+  "limitations": [
+    "正面视角和遮挡细节由 AI 推断，非实物测绘",
+    "复原版色彩、贴金范围和纹样为推测，不能证明初建原貌",
+    "座下支承细节与手指细节存在推断，应用于严谨复原前须再核对实拍"
+  ],
+  "review": "已目视核看：单尊正面、完整构图、面部及双手可见；阿閦佛向下触地手势，宝生佛低位掌心向上，普贤胸前持手/腹前托持与右腿下垂；未作精确几何校验"
+}

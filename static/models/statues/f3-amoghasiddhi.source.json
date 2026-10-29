@@ -1,0 +1,57 @@
+{
+  "task_id": "d346b834-044f-4d79-b3eb-79bc53dd30b5",
+  "formal_key": "f3-amoghasiddhi",
+  "identity": "三层北方不空成就佛",
+  "mapping_status": "confirmed",
+  "identity_basis": "项目配置与本地参考图的视觉对应；不是独立文物鉴定",
+  "raw_file": "tripo-test/generated/d346b834-044f-4d79-b3eb-79bc53dd30b5.glb",
+  "formal_file": "static/models/statues/f3-amoghasiddhi.glb",
+  "raw_sha256": "28c0598af6a220e1cc6c56a8eb0171f290a260ce28baf67e9b9f78e1e5dc6e56",
+  "formal_sha256": "ca7561d9164b93559e76de0f389327be4bb8db113db799a01b5631a8acca319c",
+  "preview_files": [
+    "tripo-test/generated-preview/d346b834_0.png",
+    "tripo-test/generated-preview/d346b834_1.png",
+    "tripo-test/generated-preview/d346b834_2.png",
+    "tripo-test/generated-preview/d346b834_3.png"
+  ],
+  "visually_corresponding_reference": "tripo-test/picks/10-f3-amoghasiddhi.jpg",
+  "generation_input_status": "视觉相符；未找到上传或生成任务日志，不能证明此文件就是实际输入",
+  "visual_observations": "右手抬起、左手近膝、金色胸部、灰色衣褶与莲座相符。",
+  "evidence": {
+    "base_color_texture_raw_sha256": "0f23161521e9ad309546c3dd7523cf5950775c75f7c410cfd4fd83981f19747c",
+    "base_color_texture_formal_sha256": "0f23161521e9ad309546c3dd7523cf5950775c75f7c410cfd4fd83981f19747c",
+    "base_color_texture_exact_bytes": true,
+    "raw_base_color_dimensions": [
+      2048,
+      2048
+    ],
+    "formal_base_color_dimensions": [
+      2048,
+      2048
+    ],
+    "base_color_rgb_mae_128": 0,
+    "mae_method": "Pillow RGB; resize 128x128 BICUBIC; mean absolute channel error on 0..255",
+    "raw_extent_height_normalized": [
+      0.6973744466668518,
+      1,
+      0.7070981533432776
+    ],
+    "formal_extent_height_normalized": [
+      0.6973105669021606,
+      1,
+      0.7071827054023743
+    ],
+    "max_normalized_extent_difference": 0.00008455205909663199,
+    "raw_triangles": 1677354,
+    "formal_triangles": 79999,
+    "raw_generator": "gltfpack 1.2",
+    "formal_generator": "Khronos glTF Blender I/O v5.2.40"
+  },
+  "audit_date": "2026-10-28",
+  "unknowns": [
+    "生成提示词与生成参数",
+    "原始下载日期",
+    "实际上传输入文件",
+    "具体后处理操作日志"
+  ]
+}

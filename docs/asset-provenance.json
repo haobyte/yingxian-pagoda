@@ -1,0 +1,788 @@
+[
+  {
+    "file": "comparison/f1-shakyamuni-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f1-shakyamuni-ai-generated-present-front-v1.png",
+    "originalSha256": "3a83e459db8f2d9a88956aa31ef4311b653142d0e23926fa4b40d1cb3a4283ef",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f1-shakyamuni-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f1-shakyamuni-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "03ce533774e26ca0fab824bd280fd247ca9c943b718fd71ca0abc01b2c58fea4",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f1-shakyamuni-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f1-shakyamuni-ai-generated-present-front-v1.source.json",
+    "originalSha256": "dfc9ea0dcf4ff52e31249063cdc744f8d8b52b242c0d5c8166dedd082325ba5b",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f1-shakyamuni-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f1-shakyamuni-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "76036516f37a7db1787a2740f7f3a7bb900265934be76ce9e1dd12a8e08adb8e",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f1-shakyamuni-modelSource.json",
+    "originalSource": "static/models/statues/f1-shakyamuni.source.json",
+    "originalSha256": "babae5609d755cecf17ebf2cd72c6c58f2c3cb69d5ae8110bee2705cef92d259",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f2-central-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-central-ai-generated-present-front-v1.png",
+    "originalSha256": "eb3c5a5770311e24316c052effe9929eb6273e7d8d4291c51cbfb6477f82db2d",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f2-central-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-central-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "2633ac72b8865050963160b8a69fa3edfb8617ab96ecf1e2d94a8978b565265c",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f2-central-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-central-ai-generated-present-front-v1.source.json",
+    "originalSha256": "0f7303cd01b012207245c2e0b52e6e2168a16a410bce6d28c1dfef5a222c436c",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f2-central-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-central-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "bbe05e0500aef395d982d680ae2bee13e34f1858eac31506ff3f1de70f99b195",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f2-central-modelSource.json",
+    "originalSource": "static/models/statues/f2-central.source.json",
+    "originalSha256": "079675ff2776fb7b3aacf5695fd674fecf974b1e9ad80080d043e5f59af9b344",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f2-attendant-yellow-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-attendant-yellow-ai-generated-present-front-v1.png",
+    "originalSha256": "277249f602e999fdaa62aa269326de2bb9ae194e3998827b40d20fa3585442c6",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f2-attendant-yellow-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-attendant-yellow-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "ebcfffde349a74c93b369a6af19ba8ee152522ff918daa617d8e2d5eec69f8cf",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f2-attendant-yellow-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-attendant-yellow-ai-generated-present-front-v1.source.json",
+    "originalSha256": "9500a6f31bf062c6bbe1a3828f1488bb6cc9fd41a2944ba9c29570cd0d1dbd78",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f2-attendant-yellow-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-attendant-yellow-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "8550758c4cf8d454807fa8f4b16f9d1f032d34a46d15ebb21d6d26f3e01f32f5",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f2-attendant-yellow-modelSource.json",
+    "originalSource": "static/models/statues/f2-attendant-yellow.source.json",
+    "originalSha256": "4264100dec95447415d7e9ce75ad2b8f3f42cbd86d84461d3f596a40994ec208",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f2-attendant-blue-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-attendant-blue-ai-generated-present-front-v1.png",
+    "originalSha256": "5f61348178df4b5c0b435a449d2a6c1fd1c72eac769ab9031f085c67af230772",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f2-attendant-blue-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-attendant-blue-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "5a7fd9294aa3c81b779d5bcf198ba834ef0623dcd53ad0379a4b8d0605b8cfd8",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f2-attendant-blue-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-attendant-blue-ai-generated-present-front-v1.source.json",
+    "originalSha256": "5e63fb66c292d116ba144028e3c60cc6b1a005684549cec021eeba352f5b2348",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f2-attendant-blue-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-attendant-blue-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "8ff4bc7197b3a6b28ac764f6909bcfe518006a396496bf78765f01832e6ed30a",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f2-attendant-blue-modelSource.json",
+    "originalSource": "static/models/statues/f2-attendant-blue.source.json",
+    "originalSha256": "7c7b072f4005abd9b2e9a4a16a94720eb71056f1ce8d098c2e94da11aec5b9d9",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f2-manjushri-lion-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-manjushri-lion-ai-generated-present-front-v1.png",
+    "originalSha256": "7294285637167b88550bd34889eb8ffa73b060fe5cc2968115db80e85637c99b",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f2-manjushri-lion-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-manjushri-lion-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "a7be730b5f6ea28137dd777a52b8533f0df41f323fce1f0f294f0e2545adb66f",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f2-manjushri-lion-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-manjushri-lion-ai-generated-present-front-v1.source.json",
+    "originalSha256": "c0acef4be1209b130d423f8accd842ed6dce28dd8567b5de3e297a1d0502ff5e",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f2-manjushri-lion-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-manjushri-lion-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "73db43616066d91c0823abc967db8a78502e2fe1761c3fde6fe3609ef63b85d6",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f2-manjushri-lion-modelSource.json",
+    "originalSource": "static/models/statues/f2-manjushri-lion.source.json",
+    "originalSha256": "2d7d04247409e497b2d933c5198f97c78ae844d08349f1acc89cdd4484b4922b",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f2-samantabhadra-elephant-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-samantabhadra-elephant-ai-generated-present-front-v1.png",
+    "originalSha256": "fe0cfbb38162ab154c8f3866a96840b5f5c30a67142f16158593160e487bd4a7",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f2-samantabhadra-elephant-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-samantabhadra-elephant-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "7d6ef796395a5ef69980b4007c9cc2357df2a6f9acfc013855e9c6f4bf01b982",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f2-samantabhadra-elephant-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-samantabhadra-elephant-ai-generated-present-front-v1.source.json",
+    "originalSha256": "182c3376938348fab3a8bcc8aec226909730df0b36f9aca026b5a0660786bbeb",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f2-samantabhadra-elephant-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f2-samantabhadra-elephant-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "7616572d3fefea20cd6b139d572679704e86f3ef231511bca15226cd670ff6f1",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f2-samantabhadra-elephant-modelSource.json",
+    "originalSource": "static/models/statues/f2-samantabhadra-elephant.source.json",
+    "originalSha256": "2f9b10dac70d24fc9f4425b5b0e02f89da65f45d690890b65d832d411bafaf58",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f3-akshobhya-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f3-akshobhya-ai-generated-present-front-v1.png",
+    "originalSha256": "9660e8533165a5e9a54bcbdf917532d5a8f217d281cecc733f5778c725af240d",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f3-akshobhya-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f3-akshobhya-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "3a81f9e9be4a86d862bbe9d5223b66d68b9642be0bf9d13b1a68d59f24641484",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f3-akshobhya-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f3-akshobhya-ai-generated-present-front-v1.source.json",
+    "originalSha256": "f4c44904c3a3b879d038aa0a9ac741679442c9fbdf3f38cd754a40ddb028f20b",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f3-akshobhya-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f3-akshobhya-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "f6781127129185db2a15576bcad987dd6d243c6777c72e7e0da6128edaf61aff",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f3-akshobhya-modelSource.json",
+    "originalSource": "static/models/statues/f3-akshobhya.source.json",
+    "originalSha256": "950f706ae24389cc8cae72fee0f4e693cb978c96a6f4b87241f56c8198905613",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f3-ratnasambhava-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f3-ratnasambhava-ai-generated-present-front-v1.png",
+    "originalSha256": "bd424f4ca325deb79ef8bd146c3ce9724db9da0f83cb18797d03d6a8fe0a0cb1",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f3-ratnasambhava-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f3-ratnasambhava-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "20c629ac601e839bc1417b4e33097dfde02304f5918f251a05a05bc55a3d0b85",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f3-ratnasambhava-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f3-ratnasambhava-ai-generated-present-front-v1.source.json",
+    "originalSha256": "9151a094b1a6d3b28e69955e204e6fcc4c04664552cd2c4c9b50afc098c1251f",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f3-ratnasambhava-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f3-ratnasambhava-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "22f6915cad3c31f5ecdacebe558160d5c088b63e4d28977539cde5fdb00b6ceb",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f3-ratnasambhava-modelSource.json",
+    "originalSource": "static/models/statues/f3-ratnasambhava.source.json",
+    "originalSha256": "1d092e0275bab54283ddcd9f3ed3e560adf9d5e16dd19cea162ecec1917b56e2",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f3-amitabha-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f3-amitabha-ai-generated-present-front-v1.png",
+    "originalSha256": "b8acef9d03180310dc6babe1aafb2ce2f17a1b3b22e7c7169e5fbf87e32c3a8d",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f3-amitabha-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f3-amitabha-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "aebd52c34a0c79132a6265fee58487e441cf2f54f8ceab5c8ee9a82525a00bd5",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f3-amitabha-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f3-amitabha-ai-generated-present-front-v1.source.json",
+    "originalSha256": "ea3fef1ef0e4638b362b4ea5d4397a12f934be46d9b19849330a477c56ee0e5e",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f3-amitabha-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f3-amitabha-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "a27fe601e8e2c56c5ad0fd4cd5827052c9657637422f42af5076e22c4ef86d38",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f3-amitabha-modelSource.json",
+    "originalSource": "static/models/statues/f3-amitabha.source.json",
+    "originalSha256": "bc85bbb359693274721d662d6c041037c9d988fc379dfeaa5d9b75e800d855e2",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f3-amoghasiddhi-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f3-amoghasiddhi-ai-generated-present-front-v1.png",
+    "originalSha256": "d964c92b045646fcb4ebb254ee129e070dac20bf8c645000d550fe3c42b5964f",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f3-amoghasiddhi-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f3-amoghasiddhi-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "b84305d0ea759d70ae8da118ccad83f2b2fa843582b0324f57bb21ae657911dc",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f3-amoghasiddhi-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f3-amoghasiddhi-ai-generated-present-front-v1.source.json",
+    "originalSha256": "423780ae25d18d3b6ef30dbe0d2b1e965c2d54be352150d6e4173886b2c53819",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f3-amoghasiddhi-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f3-amoghasiddhi-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "dcf9c1e33f57c87e75994ec00c90a70b213e151b221f5890de790bf8356a365f",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f3-amoghasiddhi-modelSource.json",
+    "originalSource": "static/models/statues/f3-amoghasiddhi.source.json",
+    "originalSha256": "b0a09e55dc714795794fbbafeea4b53a1ad10687158245e0108df182c1443a8c",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-central-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-central-ai-generated-present-front-v1.png",
+    "originalSha256": "68382eaf2f17653df02197ad4d547a3456bcd484ac395789bb18ea585d864087",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f4-central-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-central-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "9dfb3fd900a131ccea3373d08234292ea6cac78a41c44ddb716aeccbf02b73be",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f4-central-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-central-ai-generated-present-front-v1.source.json",
+    "originalSha256": "71d69de50ff126a7f6aa84c4e316f5474ff04c586cff45be624f1486a2e28235",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-central-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-central-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "8ddc27960dfdbe4bcd7b8d2f15862d670960ed5b26c8f08d4dff120bcca7e810",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-central-modelSource.json",
+    "originalSource": "static/models/statues/f4-central.source.json",
+    "originalSha256": "db1b32d8a1b161be3e3f3ce98bf149bc806073568f65d739ed08378940bb7607",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-kasyapa-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-kasyapa-ai-generated-present-front-v1.png",
+    "originalSha256": "a2585c677a925673fd6a55670b3910e7f240f2cdc43ee280409b28ebf8b510bc",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f4-kasyapa-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-kasyapa-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "98e11f81544c9b71f8b606285b706096be604a9ceed0a3a00a1b39518095443a",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f4-kasyapa-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-kasyapa-ai-generated-present-front-v1.source.json",
+    "originalSha256": "f731c57cf6325f0d7cd6a841c9c3064448dba20acff668ac1b703944ec294e86",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-kasyapa-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-kasyapa-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "0d9718ad7b75a7d089c504c4a9f9a6d5c2c5fca957fa414ebfd562371a1bf74b",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-kasyapa-modelSource.json",
+    "originalSource": "static/models/statues/f4-kasyapa.source.json",
+    "originalSha256": "f29ab5faf6bf57b4fa9641bb0541d6a3d21cb44018efc09026c507e93adeeeda",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-ananda-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-ananda-ai-generated-present-front-v1.png",
+    "originalSha256": "f57b3df518fc975a0c4710f2dd31b46e4fc5d85d9289803801faaeefe8edb125",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f4-ananda-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-ananda-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "670f37d42095f32b4367184aa8fbfbfda205fde65e5b3bf85eca607de9c1114f",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f4-ananda-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-ananda-ai-generated-present-front-v1.source.json",
+    "originalSha256": "271af0250547169493464140575ba6d8afaaaaf36277465176463df54b62789c",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-ananda-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-ananda-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "79eb052425495d302c620d0bc20c43041760693393cc64d7bf772206db9b59c8",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-ananda-modelSource.json",
+    "originalSource": "static/models/statues/f4-ananda.source.json",
+    "originalSha256": "00a9f4120af8e7a257aa39095e77ab3d75facb64290938546394b464e131f18e",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-manjushri-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-manjushri-ai-generated-present-front-v1.png",
+    "originalSha256": "e1c69ea3e39b36514a9368412e849dac50b704c9be807cf355e3c971ebe5f04e",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f4-manjushri-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-manjushri-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "7c1b1f64336703f2e906a04be9c953565b1419c9ae6234b1aa38574de869edd8",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f4-manjushri-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-manjushri-ai-generated-present-front-v1.source.json",
+    "originalSha256": "480efd0c7c6236836ed02908c041ad3aabf5b604a681012419588304dfd8323a",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-manjushri-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-manjushri-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "13201afe7b923fc0db4cc46cc2dab37b1fcea99b4a809efb24c0605c61d77034",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-manjushri-modelSource.json",
+    "originalSource": "static/models/statues/f4-manjushri.source.json",
+    "originalSha256": "0f277d5642ea1a53d9d205f5c277440f083f2075ad51ffbf9776548ced6d5608",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-samantabhadra-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-samantabhadra-ai-generated-present-front-v1.png",
+    "originalSha256": "ff824f811672a269de9507a8a3b789c775210c11446d2e9820cc9ec92140c9f7",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f4-samantabhadra-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-samantabhadra-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "17f852430c98dc381d1ef241845d251540de828245bfe9e1ea648cf1ea61770f",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f4-samantabhadra-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-samantabhadra-ai-generated-present-front-v1.source.json",
+    "originalSha256": "c487288aafd59992e011d86e1bd7ccbafa586575f8af00a20de18566e5ba2b7a",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-samantabhadra-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-samantabhadra-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "ecb59a756894ac2615e7e813967067546e585bb7a7230970bfb905b65eae3625",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-samantabhadra-modelSource.json",
+    "originalSource": "static/models/statues/f4-samantabhadra.source.json",
+    "originalSha256": "bda1043bfd78c0a258a803e127f65fe60e4cadd878320c3de1addbf8a7a8175a",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-lion-groom-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-lion-groom-ai-generated-present-front-v1.png",
+    "originalSha256": "8339fa4293fd8fe5b22df3065954a3a5254b5b7d24608ae49a15494f44f951ae",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f4-lion-groom-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-lion-groom-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "b2afe7f20668489a37891e3997424879da2dde9f63b9ac09ee2b5f7ad84dfb75",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f4-lion-groom-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-lion-groom-ai-generated-present-front-v1.source.json",
+    "originalSha256": "d4d44cc65ea46a430b5692a8c112fd4df8efdb154610023f3d1cbd3b475a2600",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-lion-groom-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-lion-groom-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "e8aa9badb78630a0122791504baa896e1c89b191579d7f56dbdb740eac23941e",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-lion-groom-modelSource.json",
+    "originalSource": "static/models/statues/f4-lion-groom.source.json",
+    "originalSha256": "0575caa309279cf1f5d4fe6f2f6193ab910831ac504f12648bc8bb10acaf1395",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-elephant-groom-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-elephant-groom-ai-generated-present-front-v1.png",
+    "originalSha256": "691b922905cf9cc8a2e2457fe8d85a8bbcce850823c6c1fb82c9a8ae11426038",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f4-elephant-groom-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-elephant-groom-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "1388722275be888da211436e27e49efd2380163de97ea9782566023950be645c",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f4-elephant-groom-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-elephant-groom-ai-generated-present-front-v1.source.json",
+    "originalSha256": "f3b202899dc232fa766de6cbf0a24bb3e9e23d4d8a30ed75fbb2e63440f8f99f",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-elephant-groom-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f4-elephant-groom-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "cf6929034b618e2b5eabf2d809f38611c16394e5f4b29639e0180cb1c4516620",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f4-elephant-groom-modelSource.json",
+    "originalSource": "static/models/statues/f4-elephant-groom.source.json",
+    "originalSha256": "876d0fb99e094e423435d176c518e2128315306603e9bb455aa75b1da1cb64b3",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-vairocana-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-vairocana-ai-generated-present-front-v1.png",
+    "originalSha256": "6b2e267b83063fa6788c669d2b6ca165684552cef7821878350a7025cff31d80",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-vairocana-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-vairocana-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "3dfa2edbcf601a36bb4a67d83e657d7e61dbe8410d956e052f69e5f72f9f34f6",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-vairocana-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-vairocana-ai-generated-present-front-v1.source.json",
+    "originalSha256": "5d7f4a9f74d6b0f740b30b73eecd360dd43dd5538e90a4f7a8e01894faab2309",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-vairocana-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-vairocana-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "c912d54228b1e1a46c0df278a3fa9432ab5da932325cdc310147e69c037a3d98",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-vairocana-modelSource.json",
+    "originalSource": "static/models/statues/f5-vairocana.source.json",
+    "originalSha256": "16a9a0492420df244bcf315d5f45bfaa9514958e8c246ccf6c0a4b3687decabe",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-avalokiteshvara-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-avalokiteshvara-ai-generated-present-front-v1.png",
+    "originalSha256": "b0d7be5a2ae691c0c5227c69d21ccaea3c4ce58eef0b23d44e9bb83f3e4e5294",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-avalokiteshvara-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-avalokiteshvara-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "0025b81b7f129ffade4ba909580ad30406914c6528b4bf67dc6098430292ba91",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-avalokiteshvara-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-avalokiteshvara-ai-generated-present-front-v1.source.json",
+    "originalSha256": "3e78b8a727a48a2966062a23a6037a95de410ada318c5ab4d92a2494e51e8435",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-avalokiteshvara-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-avalokiteshvara-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "3aaa3adc68a83cc3eb117eafa811a2c1ce9b1c9d21a32bd014166b2d9df255ca",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-avalokiteshvara-modelSource.json",
+    "originalSource": "static/models/statues/f5-avalokiteshvara.source.json",
+    "originalSha256": "111cb637e15cf0e453e48f20f21ab4e5976deb3282829d6693625e497ee83404",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-maitreya-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-maitreya-ai-generated-present-front-v1.png",
+    "originalSha256": "a90fe1b26c4f8a255105abe85d3ad75276074d67eb5ff0e78ef21a7748219706",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-maitreya-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-maitreya-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "62cf230be22d2b11d244abf396bebf61b13cc3ff5f120418175fe8ee3958bb24",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-maitreya-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-maitreya-ai-generated-present-front-v1.source.json",
+    "originalSha256": "f6125a25b83e661a0f4241c7828a990b58420aae4c66a4b1266a9967a50ea8e3",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-maitreya-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-maitreya-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "2f59d75293d3b679a2ae07f10f02f925a68bc76be95c3717b78379bbf8155ca0",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-maitreya-modelSource.json",
+    "originalSource": "static/models/statues/f5-maitreya.source.json",
+    "originalSha256": "1bec1a42f5e408ebb7b5a78eebb2a42a321f633f508961742b9f8b5b7f85722d",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-akashagarbha-photo.png",
+    "originalSource": "tripo-test/picks/13-f5-akashagarbha.png",
+    "originalSha256": "1f17f656929ab17ac1eaeef6d2e0600428b3e9c4dd399ce707747707bf97e493",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-akashagarbha-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-akashagarbha-ai-generated-present-front-v1.png",
+    "originalSha256": "a4732230a31bee9bdb2c6088952b68f7a2dba58cc631caba390147f6bddc626e",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-akashagarbha-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-akashagarbha-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "54a5e3e4718e978c66f2e1fd92b9957beeb11864186872fb088018692d863e2a",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-akashagarbha-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-akashagarbha-ai-generated-present-front-v1.source.json",
+    "originalSha256": "42fa0608236254d000ba7140137cbc89279b4aa55cc5fc5736ec576b369ef2e3",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-akashagarbha-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-akashagarbha-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "30d2748fb36dd5ca0c8cd783eaecba05380bf2d6069fcdbe9275ccbf0cc412e4",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-akashagarbha-modelSource.json",
+    "originalSource": "static/models/statues/f5-akashagarbha.source.json",
+    "originalSha256": "8347ba86049188dee855e9735a8944a95b7082bc71eafc5326c352cf1bd07c28",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-samantabhadra-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-samantabhadra-ai-generated-present-front-v1.png",
+    "originalSha256": "20883a5bed76c64f68656bd7f374a6d9e9da57b70c08772f60cfe721f8e13f67",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-samantabhadra-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-samantabhadra-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "b17b93578b611550ed42ae14cd352e20f2e3d180595b8adea56efcd53c710289",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-samantabhadra-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-samantabhadra-ai-generated-present-front-v1.source.json",
+    "originalSha256": "200d2e7e3f1b3362243335a75afaec8b09dc6a0bfdd11a6434a91900ee9835a5",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-samantabhadra-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-samantabhadra-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "6d7bb52826e9874e2a3b0c7f2c50992cf41d3f28930e9421b108c373944586a1",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-samantabhadra-modelSource.json",
+    "originalSource": "static/models/statues/f5-samantabhadra.source.json",
+    "originalSha256": "37c0255ca0be8ad738c3cf025725bb3a77af0e127deb65cb124d448ad17b6bad",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-vajrapani-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-vajrapani-ai-generated-present-front-v1.png",
+    "originalSha256": "91affa55e37e5f84576caf8b0d05f4fb2fcdee3a868150164fe54e0462bde096",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-vajrapani-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-vajrapani-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "b13e3391d9a672b54c2d421903efe54e532cece71fe4ca1474c8cba5cebbe062",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-vajrapani-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-vajrapani-ai-generated-present-front-v1.source.json",
+    "originalSha256": "6a817faaca282771765f7674d3ae1054b2a2a22cdebc87ca0454232256f51a56",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-vajrapani-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-vajrapani-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "0f850363d8674871b1e3a8d01b8b67fa68f22942c002714de79bcf0ff43cc33d",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-vajrapani-modelSource.json",
+    "originalSource": "static/models/statues/f5-vajrapani.source.json",
+    "originalSha256": "4770d6b36d4a84404a014ee75bdafc10524e2efab48af499cca6760eced8cadd",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-manjushri-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-manjushri-ai-generated-present-front-v1.png",
+    "originalSha256": "afc56cbc20a5947f5a988fe392287d29252baddbbfbfa6b003981673c2759af1",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-manjushri-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-manjushri-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "bf7221202cd2b202bb8ec4ce9a95b18b0f2e200f345fc56f5dacbd2fb61a6ad8",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-manjushri-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-manjushri-ai-generated-present-front-v1.source.json",
+    "originalSha256": "3a0323f86db7aeda4eed61ceff7264291d69a30e88679bf35ec436721cb3e5ab",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-manjushri-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-manjushri-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "a7c066391a1f066fb4e9c995fce09cc2986fcb609b91af6198c2b3c0c9c03547",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-manjushri-modelSource.json",
+    "originalSource": "static/models/statues/f5-manjushri.source.json",
+    "originalSha256": "491876b20caee26e50bc4b14f6ca48088159cb55539e9ea8dcd0a124664b9c35",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-sarvanivarana-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-sarvanivarana-ai-generated-present-front-v1.png",
+    "originalSha256": "6bb364989dcb0bf83d7b8eaf3f4f0a019fc1697eaba3f92aadde6b5508f77341",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-sarvanivarana-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-sarvanivarana-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "46afef2d3b4503d7df41c9102d7a8eeb381396134546f865b3526641d3b4c1a7",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-sarvanivarana-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-sarvanivarana-ai-generated-present-front-v1.source.json",
+    "originalSha256": "b39a280d5fdaab747a042b857bcc2dd0bdc8179923a577947e03a81c99241c80",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-sarvanivarana-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-sarvanivarana-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "5966a33034bb37eeae0dd15dcf36fc3900529f59bb73e9c5e60dcdddd07dbc96",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-sarvanivarana-modelSource.json",
+    "originalSource": "static/models/statues/f5-sarvanivarana.source.json",
+    "originalSha256": "e5b9537e9c9ab225f53a027cc9d94e00e3900ccbd2e8f19025e8cb7d332349e0",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-kshitigarbha-present.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-kshitigarbha-ai-generated-present-front-v1.png",
+    "originalSha256": "193bbddba959037ab769979d45a6a5fd3df0fdcdfc197da491dc31ad25c26de4",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-kshitigarbha-restoration.png",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-kshitigarbha-ai-generated-restoration-hypothesis-front-v1.png",
+    "originalSha256": "2c9c4c59046f9e127a9a2b1ea98c5a50f07c6059517387f2c558f8373fa89720",
+    "processing": "Byte-for-byte copy"
+  },
+  {
+    "file": "comparison/f5-kshitigarbha-source.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-kshitigarbha-ai-generated-present-front-v1.source.json",
+    "originalSha256": "2db57c5cac1a2913de145a3565e3adfaf1c8edb84e34f589dc4abf0a8db96f59",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-kshitigarbha-restorationSource.json",
+    "originalSource": "tripo-test/ai-generated-reference/2026-10-28/f5-kshitigarbha-ai-generated-restoration-hypothesis-front-v1.source.json",
+    "originalSha256": "4cf9c1a36decfb3ec7749ee9d5ebcc7e6c236253b1ebe13af0ef6ad644ef4575",
+    "processing": "Local-only fields omitted"
+  },
+  {
+    "file": "comparison/f5-kshitigarbha-modelSource.json",
+    "originalSource": "static/models/statues/f5-kshitigarbha.source.json",
+    "originalSha256": "3c1536dfd1e5b95ae13ca9bfc36851a4bf168964bb02a271ea14f56ff291ccd6",
+    "processing": "Local-only fields omitted"
+  }
+]

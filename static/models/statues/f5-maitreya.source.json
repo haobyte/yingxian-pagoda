@@ -1,0 +1,122 @@
+{
+  "key": "f5-maitreya",
+  "date": "2026-10-29",
+  "runtime_file": "static/models/statues/f5-maitreya.glb",
+  "raw_file": "tripo-test/generated/df7de3d7-4993-4162-b119-5b327db55022.glb",
+  "raw_sha256": "3d512c75e0487a1ba49758f49732b703e52491fc7f68fb9a4e4122d8ebd5baab",
+  "result_page_id": "df7de3d7-4993-4162-b119-5b327db55022",
+  "model_asset_uuid": "520ef399-a961-4f75-9183-532a1b84a9e0",
+  "input": "tripo-test/ai-generated-reference/2026-10-28/f5-maitreya-ai-generated-present-front-v1.png",
+  "input_source": "tripo-test/ai-generated-reference/2026-10-28/f5-maitreya-ai-generated-present-front-v1.source.json",
+  "input_nature": "AI-generated present-appearance frontal reference; not a photograph",
+  "generation_parameters": {
+    "model": "H3.0",
+    "texture_quality": "2K",
+    "texture": true,
+    "ai_completion": true,
+    "delighting": false,
+    "pbr": false,
+    "topology": "triangles",
+    "face_limit": 2000000
+  },
+  "raw_source_record": "tripo-test/generated/df7de3d7-4993-4162-b119-5b327db55022.source.json",
+  "processing": {
+    "tool": "Blender 5.2.2 LTS",
+    "script": "tools/prepare-tripo-runtime.py",
+    "triangles_before": 1490704,
+    "triangles_after": 80000,
+    "decimate_target": 80000,
+    "blender_bounds_before_normalization": [
+      [
+        -0.3432568609714508,
+        -0.3558700978755951,
+        -0.4998900592327118
+      ],
+      [
+        0.3429499566555023,
+        0.3508623540401459,
+        0.4994147717952728
+      ]
+    ],
+    "blender_transform": [
+      [
+        1.0006957054138184,
+        0,
+        0,
+        0.00015355891082435846
+      ],
+      [
+        0,
+        1.0006957054138184,
+        0,
+        0.0025056139566004276
+      ],
+      [
+        0,
+        0,
+        1.0006957054138184,
+        0.5002378225326538
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "runtime_coordinates": "Y-up, front +X, height 1, bottom y=0, centered XZ",
+    "texture": "Preserve embedded base-color image; no rebake or resizing",
+    "geometry_added": false,
+    "raw_preserved": true
+  },
+  "limitations": [
+    "正面视角及遮挡细节由 AI 推断，非实物测绘",
+    "生成图不能反证造像身份、手印或历史原色",
+    "推测复原未获颜料检测或初建图像验证，不代表已证实的辽代原貌",
+    "弥勒候选照片与普贤照片 SHA-256 完全相同；两组图仅按现有资源键分别生成，不能视为两尊独立实物的可靠复原，需补充独立照片核实身份",
+    "Back and occluded geometry inferred by Tripo"
+  ],
+  "sha256": "02d3033c0b03abb2565943ec35f0cd24c55518463e630b2062d192c1f849a754",
+  "bytes": 3266488,
+  "verification": {
+    "raw_unchanged": true,
+    "texture_exact_bytes": true,
+    "height_one": true,
+    "bottom_zero": true,
+    "center_xz": true,
+    "no_compression_decoder_required": true
+  },
+  "runtime_geometry": {
+    "sha256": "02d3033c0b03abb2565943ec35f0cd24c55518463e630b2062d192c1f849a754",
+    "bytes": 3266488,
+    "triangles": 80000,
+    "images": [
+      {
+        "sha256": "3b25bdcd9a4226aca94e53740c3fa6275de923a42a28026460a94dd69bba53e7",
+        "dimensions": [
+          2048,
+          2048
+        ]
+      }
+    ],
+    "bounds": [
+      [
+        -0.3433420956134796,
+        0,
+        -0.3536120653152466
+      ],
+      [
+        0.343342125415802,
+        1,
+        0.3536120653152466
+      ]
+    ],
+    "nodes": [
+      {
+        "mesh": 0,
+        "name": "tripo_node_520ef399-a961-4f75-9183-532a1b84a9e0"
+      }
+    ],
+    "extensions": []
+  }
+}

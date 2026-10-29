@@ -1,0 +1,35 @@
+{
+  "file": "f4-samantabhadra-ai-generated-present-front-v1.png",
+  "subject": "四层普贤菩萨",
+  "variant": "现貌参考重建",
+  "ai_generated": true,
+  "is_documentary_photo": false,
+  "historical_reconstruction_verified": false,
+  "generator": "OpenAI built-in image_gen",
+  "generated_on": "2026-10-28",
+  "width": 1024,
+  "height": 1536,
+  "references": [
+    {
+      "path": "tripo-test/picks/17-f4-samantabhadra.jpg",
+      "sha256": "7ffd7559bc87da9fcbfc12085bfc5d71ca4dad4b4d53df3cead1a10a40698def"
+    },
+    {
+      "path": "static/statues/f4-samantabhadra.png",
+      "sha256": "461e6da42ad65df0cedf792110c8e1e4c68bd568d5bcaad24d22d43642df138c"
+    }
+  ],
+  "prompt": "Create ONE high-resolution portrait 1024x1536 photorealistic frontal reference image for image-to-3D modeling, based on the supplied actual photograph of a specific Yingxian Wooden Pagoda clay statue. The identity, facial proportions, seated anatomy, hands and drapery must be this particular reference statue, not a generic Buddhist statue. This is AI-generated reference imagery, not a documentary photograph. Precisely straight-on front view, no three-quarter angle, camera centered at mid-height, upright axis, near orthographic/long-lens perspective. Show full sculpture and specified attached seat with complete top and bottom and narrow even margins. Neutral seamless light gray background, soft even diffuse studio light, subtle grounding shadow. Detailed real hand-modeled painted clay, matte mineral pigments and plausible gold leaf, physically believable surface grain, NOT living skin, plastic, cartoon or shiny CGI. Face and both hands clearly readable and in focus. No temple architecture, neighbors, altar offerings, measuring marks, halo, captions or watermarks; AI identification will be in filename, PNG metadata and sidecar. Output a single image only, not a collage.\nSpecific subject: FOURTH-FLOOR SAMANTABHADRA BODHISATTVA. Image 1 is the actual oblique color photograph; image 2 is a cutout of that same photo, supporting silhouette only. Reorient this statue to perfectly frontal view while retaining its distinctive quiet youthful sculpted face, small painted eyes, lips and chin, ornate low crown with central medallion and symmetrical scrolling crest, long earlobes/ribbons, chest collar with paired curled scroll ornaments, broad sash and layered robe. CRITICAL ASYMMETRIC POSE: statue's LEFT hand (viewer RIGHT) is raised gently before chest, fingers curled in the precise reference pose; RIGHT hand (viewer LEFT) is cupped horizontally at lower abdomen around the small bowl/cup-like form shown in the photo. RIGHT leg (viewer LEFT) HANGS DOWN over front of seat, its bare foot and all toes visible; LEFT leg (viewer RIGHT) is folded horizontally on seat, with sole/foot visible near center. DO NOT turn it into a fully cross-legged Buddha, do not mirror it, and do not add a standing pose or additional arms. Include the supporting large lotus-petal seat and its short visible stem/support exactly within the photograph's visible scope. Exclude the incomplete elephant body beneath it, no imagined elephant, no pedestal added below this local lotus support.\nVERSION A, PRESENT CONDITION. Faithfully retain all visible aging from the color photograph: the specific patches of gold loss and exposed clay on face/chest, dirty gray-beige ground, hair wear, flaked robe paint, cracks and chips, local faint blue-green/red remnants, and the dull worn seat. Preserve the colored patch pattern and sculptural irregularities as far as reference allows. Illuminate and clarify the same surviving object; do not repair/beautify it, add new elaborate decoration or turn all bare skin gold. Plain gray background should be clean, not distressed.",
+  "refinement_prompt": null,
+  "refinement_inputs": [],
+  "generated_original_sha256": "cea857a9fd23af43b3472c83b9040a9b11771bfc450a8a91e478405f951181fe",
+  "file_sha256": "ff824f811672a269de9507a8a3b789c775210c11446d2e9820cc9ec92140c9f7",
+  "local_processing": "仅添加 PNG AI 生成文字元数据；IDAT 图像数据未改变",
+  "scope": "菩萨全身与贴身莲座，保留下垂足；不含照片未完整显示的象身",
+  "limitations": [
+    "正面视角和遮挡细节由 AI 推断，非实物测绘",
+    "尽量保留参考照片风化状态，损伤位置和细节仍可能偏离实物",
+    "座下支承细节与手指细节存在推断，应用于严谨复原前须再核对实拍"
+  ],
+  "review": "已目视核看：单尊正面、完整构图、面部及双手可见；阿閦佛向下触地手势，宝生佛低位掌心向上，普贤胸前持手/腹前托持与右腿下垂；未作精确几何校验"
+}

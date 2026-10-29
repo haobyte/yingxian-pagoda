@@ -1,0 +1,32 @@
+{
+  "file": "f2-attendant-yellow-ai-generated-present-front-v1.png",
+  "subject": "二层黄衣立胁侍",
+  "variant": "现貌参考重建",
+  "ai_generated": true,
+  "is_documentary_photo": false,
+  "historical_reconstruction_verified": false,
+  "generator": "OpenAI built-in image_gen",
+  "generated_on": "2026-10-28",
+  "width": 1024,
+  "height": 1536,
+  "references": [
+    {
+      "path": "tripo-test/picks/1-f2-attendant-yellow.jpg",
+      "sha256": "95f524c578c959ce9c629919bf94ea735d94fc2f09d940665eca4e7ef16f79db"
+    }
+  ],
+  "prompt": "Create ONE high-resolution photorealistic reference-guided reconstruction of the SINGLE specific Yingxian Wooden Pagoda sculpture in the attached reference, not a generic Buddhist statue. Portrait 1024x1536. Strict centered straight frontal near-orthographic camera at sculpture mid-height, symmetrical framing, FULL requested figure and attached base with 5% margin, no cropping. Neutral light-gray seamless studio backdrop, soft even diffuse illumination, sharp face and exact fingers, all in focus. Preserve the exact sculpted facial proportions, eyes, smile, body pose, garment folds, headdress, number of arms, hand positions and visible iconographic details of this specific reference. Material is realistic handmade ancient painted clay sculpture, mineral pigments and gilding, NEVER living human skin, wax, glossy plastic or cartoon/CGI. Clear shape separation suitable for 3D modeling. Isolate from temple, other figures, columns, halos not actually present, offerings and photographic clutter. No captions, lettering, watermark, panels or collage. Image is an AI interpretation, not documentary evidence; metadata outside image will say this. Subject-specific visual observations: Slender crowned standing attendant, pale worn face black brows red lips, small red gold crown green central jewel. Brown red shoulder wrap, chest collar with green curled scroll, blue abdominal garment, bright yellow apron panel and long red skirt, long trailing ribbons at both sides. RIGHT hand viewer LEFT cupped at waist, LEFT hand viewer RIGHT lower at hip palm up reaching outward. Exactly TWO arms. Include bare feet and small lotus platform.\nPRESENT-CONDITION reconstruction: faithfully retain the original observed weathering, worn gilding, exposed ground, discoloration, chips and faded paint distribution. Improve frontal clarity and recover visible shapes without beautifying or renewing the surface. Weathered patches must stay comparable to the reference.",
+  "refinement_prompt": null,
+  "refinement_inputs": [],
+  "generated_original_sha256": "541a754ffc817adb8ff3f0bae4e4b0032510c105516e278951c0ceca0705c609",
+  "file_sha256": "277249f602e999fdaa62aa269326de2bb9ae194e3998827b40d20fa3585442c6",
+  "local_processing": "仅添加 PNG AI 生成文字元数据；图像像素未改变",
+  "scope": "全身与小莲台",
+  "identity_status": "沿用项目与选图称谓；视觉对应不等于独立宗教身份鉴定",
+  "limitations": [
+    "AI 生成的建模参考，不是实拍；正面角度与遮挡细节含推测。",
+    "复原版依据现存形制和残留色彩推测，不代表已证实的辽代初建原貌。",
+    "面部、手指、纹样和座下支承仍需实物或高清照片复核。"
+  ],
+  "review": "已逐图目视核对构图、主要手位、臂数、头饰和座式；保留生成解释误差，不作为测绘。"
+}

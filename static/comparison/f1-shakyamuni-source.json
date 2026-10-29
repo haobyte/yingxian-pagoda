@@ -1,0 +1,33 @@
+{
+  "file": "f1-shakyamuni-ai-generated-present-front-v1.png",
+  "subject": "一层释迦牟尼主佛",
+  "variant": "现貌参考重建",
+  "ai_generated": true,
+  "is_documentary_photo": false,
+  "historical_reconstruction_verified": false,
+  "generator": "OpenAI built-in image_gen",
+  "generated_on": "2026-10-28",
+  "width": 1024,
+  "height": 1536,
+  "references": [
+    {
+      "path": "tripo-test/f1-shakyamuni/B-real-photo-front.jpg",
+      "sha256": "ef6f32059115e77f37fe00afd07e819758959578ad164d4034ddaeba0d4d3ebd"
+    },
+    {
+      "path": "static/ref/floor1_statue.jpg",
+      "sha256": "8a5b1a0ce3aca366db75f224a84a2d051a93992a7c0d045553364ee8600cb71f"
+    }
+  ],
+  "prompt": "Use case: identity-preserve / scientific-educational reference. Create ONE high-resolution photorealistic reference image of the specific historical painted clay Buddha statue in the supplied reference photos, for image-to-3D modeling. This is an AI-generated visualization, not a documentary photograph. Portrait composition, exactly centered, perfectly straight frontal elevation, camera at the mid-height of the seated figure, no low-angle distortion, no three-quarter angle, no tilted head or perspective asymmetry. Whole seated figure visible from top of ushnisha to the bottom of the crossed knees with breathing room, both ears and all fingers unobstructed. Plain seamless light neutral gray studio background, soft balanced diffuse lighting, delicate grounding shadow, no dramatic rim lighting, all details in focus. Real tactile painted clay, believable mineral pigment and metal leaf, not flesh, not plastic, not smooth CGI. Preserve the unique facial proportions, garment cuts, silhouette, seated pose and hand gestures of THIS actual statue; do not substitute a generic Buddha. No temple, no other statues, no worshippers, no halos, no text, no labels, no watermarks. AI identification will be stored in the filename and accompanying provenance metadata. Output one single image, not a diptych.\nSubject: the FIRST-FLOOR colossal Shakyamuni of Yingxian Wooden Pagoda. Reference 1 is the actual close-up color photograph; reference 2 is a rotated photograph of an exhibition view and is secondary for the full crossed-leg silhouette (mentally rotate it upright). Preserve the broad round gilded face, dark blue small hair curls and ushnisha, heavy arched brows, half closed painted eyes, small red lips, long earlobes, massive torso, exposed chest, red robe with pale turquoise/ivory edges and surviving floral borders and circular motifs around the waist. Right hand on viewer LEFT is raised near shoulder exactly as in the actual reference, preserve the specific bent/extended fingers and hanging narrow yellow cloth; left hand on viewer RIGHT rests across the bent knee, palm orientation and fingers matching reference. Do not change the raised hand into the wisdom-fist mudra. Include the whole crossed-leg statue body; exclude the enormous lotus pedestal and supporting warrior figures, so the isolated body's outline ends at the crossed knees.\nVariant A — PRESENT CONDITION, maximum fidelity to the color photograph. Preserve flaking gilding, the large exposed pale clay/repair patches on the chest, weathered red/blue-green garment pigments, uneven gold on face, dust, chips and worn relief. Increase clarity through careful photographic rendering, not by inventing dense decoration. The outcome should look like the same surviving statue photographed straight-on today under good neutral light. Do not heal or remove the characteristic damage. Maintain realistic age.",
+  "refinement_prompt": null,
+  "generated_original_sha256": "9741775fd66816cee9e4c8f0f0b7975eeeb4bfaeb2460004c3bebda4749cafbf",
+  "file_sha256": "3a83e459db8f2d9a88956aa31ef4311b653142d0e23926fa4b40d1cb3a4283ef",
+  "local_processing": "仅添加 PNG AI 生成文字元数据；IDAT 图像数据未改变",
+  "scope": "完整坐姿像身，不含大型莲座/力士基座",
+  "limitations": [
+    "正面视角和细节由 AI 推断，非实物测绘",
+    "尽量保留参考照片风化状态，损伤位置和细节仍可能偏离实物"
+  ],
+  "review": "已目视核看：正面单尊、完整坐姿、面部和手印可见；未作精确几何校验"
+}

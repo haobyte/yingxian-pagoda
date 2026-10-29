@@ -1,0 +1,158 @@
+[
+  {
+    "key": "f1-shakyamuni",
+    "file": "models/statues/f1-shakyamuni.glb",
+    "bytes": 6233452,
+    "sha256": "2d2c34cc26d0dcec8e40f2500e856805dce342a585f3e7c3e1ca77700123cfd6"
+  },
+  {
+    "key": "f2-central",
+    "file": "models/statues/f2-central.glb",
+    "bytes": 5064808,
+    "sha256": "5dac879fdc0515be084fd75373fc2bac6e1f5e841508be07e5b65f1a9a266613"
+  },
+  {
+    "key": "f2-attendant-yellow",
+    "file": "models/statues/f2-attendant-yellow.glb",
+    "bytes": 2301288,
+    "sha256": "9f10707c2cd1f647e9556326d984b5005e9261b3d40ad3fb83b89b33f7fbb71f"
+  },
+  {
+    "key": "f2-attendant-blue",
+    "file": "models/statues/f2-attendant-blue.glb",
+    "bytes": 3173608,
+    "sha256": "2b3119aab54c8fa3a3e526da43e44b121fd977a917abe0da6b1f4e27e6690e58"
+  },
+  {
+    "key": "f2-manjushri-lion",
+    "file": "models/statues/f2-manjushri-lion.glb",
+    "bytes": 4913520,
+    "sha256": "0afd94b2395af831dd1abfe3c000c7c6a694108b0d6f3b657d5e05b240296562"
+  },
+  {
+    "key": "f2-samantabhadra-elephant",
+    "file": "models/statues/f2-samantabhadra-elephant.glb",
+    "bytes": 4825244,
+    "sha256": "53947713ffbcad86550860b2f051fbbf4b4874e3b8c22070ffe8a26e4d5a8920"
+  },
+  {
+    "key": "f3-akshobhya",
+    "file": "models/statues/f3-akshobhya.glb",
+    "bytes": 3422936,
+    "sha256": "2aff9fa71835d85c1bbd73e3e507e855f52527c6249943ffe3aa5de6c1370fe1"
+  },
+  {
+    "key": "f3-ratnasambhava",
+    "file": "models/statues/f3-ratnasambhava.glb",
+    "bytes": 3358464,
+    "sha256": "8c63c6a2b9d730d232de2ef206eeb9295c66eaf1050fcbf41e1d1a7694dff315"
+  },
+  {
+    "key": "f3-amitabha",
+    "file": "models/statues/f3-amitabha.glb",
+    "bytes": 4473760,
+    "sha256": "8dc45f07a25b0497f59759995d1569c06f3a1590d069b1e850e89874f142837f"
+  },
+  {
+    "key": "f3-amoghasiddhi",
+    "file": "models/statues/f3-amoghasiddhi.glb",
+    "bytes": 4333408,
+    "sha256": "ca7561d9164b93559e76de0f389327be4bb8db113db799a01b5631a8acca319c"
+  },
+  {
+    "key": "f4-central",
+    "file": "models/statues/f4-central.glb",
+    "bytes": 4897172,
+    "sha256": "e27d58744415687d6a7a1730eee77b86f5e323ef32e0ce6ad2d1f059ef7ccb7f"
+  },
+  {
+    "key": "f4-kasyapa",
+    "file": "models/statues/f4-kasyapa.glb",
+    "bytes": 2831872,
+    "sha256": "f6c48db364e0a242764bb13a045dcc101ddb162dd205cb419f0a05c0d33e5a01"
+  },
+  {
+    "key": "f4-ananda",
+    "file": "models/statues/f4-ananda.glb",
+    "bytes": 3248728,
+    "sha256": "03dee11eff6009b6c4940f1f893f16aa0757ff564be6ccf5bde43fd3105fa3c0"
+  },
+  {
+    "key": "f4-manjushri",
+    "file": "models/statues/f4-manjushri.glb",
+    "bytes": 4264108,
+    "sha256": "8f91993141acfd3bf101b677d4c29e9f874001dfd3fcd55596651b3610a3c622"
+  },
+  {
+    "key": "f4-samantabhadra",
+    "file": "models/statues/f4-samantabhadra.glb",
+    "bytes": 3501004,
+    "sha256": "4f39c05a2c42f384c7fec0ab458b2d7042eb5628dbdd135ed26fcff48a49453f"
+  },
+  {
+    "key": "f4-lion-groom",
+    "file": "models/statues/f4-lion-groom.glb",
+    "bytes": 2565928,
+    "sha256": "2c7ab7f9a18b3c38ccec0ee77cdcc0428cf922bc227c0f8d6402cb1ba1ebb9d0"
+  },
+  {
+    "key": "f4-elephant-groom",
+    "file": "models/statues/f4-elephant-groom.glb",
+    "bytes": 2974336,
+    "sha256": "d9d0746fcfbd6de70dd0b78a8652edb187783dcc66d4bfba64964e75f709b455"
+  },
+  {
+    "key": "f5-vairocana",
+    "file": "models/statues/f5-vairocana.glb",
+    "bytes": 3385112,
+    "sha256": "24cc976f9d1438afa82a23938bd55612756ebcb871a319a037fb14973ff0f07a"
+  },
+  {
+    "key": "f5-avalokiteshvara",
+    "file": "models/statues/f5-avalokiteshvara.glb",
+    "bytes": 3388772,
+    "sha256": "aa016a544100eddeb8d9641178c47abdb56428ec10a6cf90adb1a14817dd2b49"
+  },
+  {
+    "key": "f5-maitreya",
+    "file": "models/statues/f5-maitreya.glb",
+    "bytes": 3266488,
+    "sha256": "02d3033c0b03abb2565943ec35f0cd24c55518463e630b2062d192c1f849a754"
+  },
+  {
+    "key": "f5-akashagarbha",
+    "file": "models/statues/f5-akashagarbha.glb",
+    "bytes": 3463268,
+    "sha256": "a1b93da18541e2450eb2441e8ac7630c939a0ebcaec2d4589b9ba35a857ddaa0"
+  },
+  {
+    "key": "f5-samantabhadra",
+    "file": "models/statues/f5-samantabhadra.glb",
+    "bytes": 3325404,
+    "sha256": "117c08a59cca54a7e82e7bf02226a013941f086229d072e2f0d9f79e4cd5df53"
+  },
+  {
+    "key": "f5-vajrapani",
+    "file": "models/statues/f5-vajrapani.glb",
+    "bytes": 3406016,
+    "sha256": "f1c7d87bebf4dfd6db4275d4a4bf2acb7f1f9ac7cb1461111a410efe80a99f5d"
+  },
+  {
+    "key": "f5-manjushri",
+    "file": "models/statues/f5-manjushri.glb",
+    "bytes": 3576716,
+    "sha256": "e6f5d3cd79c6cf8b3d6508d7debecca3dcfc24c11c7b4be1b07510e4064a37c8"
+  },
+  {
+    "key": "f5-sarvanivarana",
+    "file": "models/statues/f5-sarvanivarana.glb",
+    "bytes": 3377056,
+    "sha256": "1b75e6313a5da4eb7deb2bead48057932c88aa92f0c5d435fbe830d64dfddff0"
+  },
+  {
+    "key": "f5-kshitigarbha",
+    "file": "models/statues/f5-kshitigarbha.glb",
+    "bytes": 3444308,
+    "sha256": "aa2b89814f01328d1a804d46b8522d21f3dd5f381c9ee54ed4975860dafbd769"
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "task_id": "dcee8df7-9bf9-42be-862f-dd91172ab9f1",
+  "formal_key": "f3-amitabha",
+  "identity": "三层西方阿弥陀佛",
+  "mapping_status": "confirmed",
+  "identity_basis": "项目配置与本地参考图的视觉对应；不是独立文物鉴定",
+  "raw_file": "tripo-test/generated/dcee8df7-9bf9-42be-862f-dd91172ab9f1.glb",
+  "formal_file": "static/models/statues/f3-amitabha.glb",
+  "raw_sha256": "19739f0dfec228b711f067bc26c0f58a25ebef2d1877f8884415fd06470e5ea5",
+  "formal_sha256": "8dc45f07a25b0497f59759995d1569c06f3a1590d069b1e850e89874f142837f",
+  "preview_files": [
+    "tripo-test/generated-preview/dcee8df7_0.png",
+    "tripo-test/generated-preview/dcee8df7_1.png",
+    "tripo-test/generated-preview/dcee8df7_2.png",
+    "tripo-test/generated-preview/dcee8df7_3.png"
+  ],
+  "visually_corresponding_reference": "tripo-test/picks/9-f3-amitabha.jpg",
+  "generation_input_status": "视觉相符；未找到上传或生成任务日志，不能证明此文件就是实际输入",
+  "visual_observations": "双手置腹前/膝上、金色胸部、暗色莲座与方形底座相符。",
+  "evidence": {
+    "base_color_texture_raw_sha256": "06130c2e84033d1d0bd3ed7e67e6000ce0a6680d5a6caeb7c5596ec3c4456b9d",
+    "base_color_texture_formal_sha256": "06130c2e84033d1d0bd3ed7e67e6000ce0a6680d5a6caeb7c5596ec3c4456b9d",
+    "base_color_texture_exact_bytes": true,
+    "raw_base_color_dimensions": [
+      2048,
+      2048
+    ],
+    "formal_base_color_dimensions": [
+      2048,
+      2048
+    ],
+    "base_color_rgb_mae_128": 0,
+    "mae_method": "Pillow RGB; resize 128x128 BICUBIC; mean absolute channel error on 0..255",
+    "raw_extent_height_normalized": [
+      0.7356351691148896,
+      1,
+      0.7240241393232864
+    ],
+    "formal_extent_height_normalized": [
+      0.7357150912284851,
+      1,
+      0.7240601778030396
+    ],
+    "max_normalized_extent_difference": 0.00007992211359553192,
+    "raw_triangles": 1915676,
+    "formal_triangles": 80000,
+    "raw_generator": "gltfpack 1.2",
+    "formal_generator": "Khronos glTF Blender I/O v5.2.40"
+  },
+  "audit_date": "2026-10-28",
+  "unknowns": [
+    "生成提示词与生成参数",
+    "原始下载日期",
+    "实际上传输入文件",
+    "具体后处理操作日志"
+  ]
+}

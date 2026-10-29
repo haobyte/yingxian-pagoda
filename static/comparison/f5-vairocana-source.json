@@ -1,0 +1,35 @@
+{
+  "file": "f5-vairocana-ai-generated-present-front-v1.png",
+  "subject": "五层大日如来（毗卢遮那佛）",
+  "variant": "现貌参考重建",
+  "ai_generated": true,
+  "is_documentary_photo": false,
+  "historical_reconstruction_verified": false,
+  "generator": "OpenAI built-in image_gen",
+  "generated_on": "2026-10-28",
+  "width": 1024,
+  "height": 1536,
+  "references": [
+    {
+      "path": "tripo-test/picks/14-f5-vairocana.jpg",
+      "sha256": "4af65d3aadf3de557882e7c483f28fd7aac4b2283c5b5591ec4797906144d735"
+    },
+    {
+      "path": "（已从公开仓库移除）static/ref/f5-vairocana-chen-plate131-bw.jpg",
+      "sha256": "169c84ef3708c11d9947ca6cf5923e186f76ef4269a8d173acf1d01c1596c34e",
+      "distributed": false,
+      "note": "第三方出版物图版，再使用授权未核实，故不随公开版分发；仅记录其曾作为生成参考。"
+    }
+  ],
+  "prompt": "Use case: identity-preserve / scientific-educational reference. Create ONE high-resolution photorealistic reference image of the specific historical painted clay Buddha statue in the supplied reference photos, for image-to-3D modeling. This is an AI-generated visualization, not a documentary photograph. Portrait composition, exactly centered, perfectly straight frontal elevation, camera at the mid-height of the seated figure, no low-angle distortion, no three-quarter angle, no tilted head or perspective asymmetry. Whole seated figure visible from top of ushnisha to the bottom of the crossed knees with breathing room, both ears and all fingers unobstructed. Plain seamless light neutral gray studio background, soft balanced diffuse lighting, delicate grounding shadow, no dramatic rim lighting, all details in focus. Real tactile painted clay, believable mineral pigment and metal leaf, not flesh, not plastic, not smooth CGI. Preserve the unique facial proportions, garment cuts, silhouette, seated pose and hand gestures of THIS actual statue; do not substitute a generic Buddha. No temple, no other statues, no worshippers, no halos, no text, no labels, no watermarks. AI identification will be stored in the filename and accompanying provenance metadata. Output one single image, not a diptych.\nSubject: the FIFTH-FLOOR central Vairocana / Dairi Rulai of Yingxian Wooden Pagoda, NOT the first-floor statue. Reference 1 (color) is primary for existing pigments, damage and face; reference 2 (historical black and white) supports clear sculptural form, drapery and hand anatomy, not current color. Preserve its distinctive broad cheeks, relatively large head, small hair curls and ushnisha, long ears, half-closed painted eyes, calm mouth, broad bare chest, flowing open robe and full-lotus seated pose. BOTH hands meet at the CENTER OF THE CHEST in the actual wisdom-fist / zhiquan mudra: statue's right hand (viewer LEFT) wraps around the upward left index finger; remaining left fingers curl as shown. Follow reference geometry closely, five fingers per hand, no extra fingers, no praying palms, no raised blessing hand. Include its closely attached two-tier rounded lotus-petal seat and rectangular plinth immediately underneath; exclude the lower animal-carved pedestal, other bodhisattvas and building.\nVariant A — PRESENT CONDITION, maximum fidelity to the supplied color photo. Retain the patchy worn face gilding, exposed gray-beige clay and ground, pale streaks, worn dark hair with blue remnants, faded red and blue-green robe traces, broad worn lotus petals, chips and irregular aging. This is a clear frontal visualization of the existing sculpture, not a restoration. Do not copy the black-and-white image's tonality; color follows the color photograph. Make the chest-level interlocking hands and facial planes sharply readable under neutral light while preserving worn material.",
+  "refinement_prompt": null,
+  "generated_original_sha256": "4d7994a1424d6c1e50b56264075447886a86f2a64ad2f15493259f4de2a33fbd",
+  "file_sha256": "6b2e267b83063fa6788c669d2b6ca165684552cef7821878350a7025cff31d80",
+  "local_processing": "仅添加 PNG AI 生成文字元数据；IDAT 图像数据未改变",
+  "scope": "坐姿像身及紧接的莲座与矩形座板，不含下方兽形基座",
+  "limitations": [
+    "正面视角和细节由 AI 推断，非实物测绘",
+    "尽量保留参考照片风化状态，损伤位置和细节仍可能偏离实物"
+  ],
+  "review": "已目视核看：正面单尊、完整坐姿、面部和手印可见；未作精确几何校验"
+}

@@ -1,0 +1,33 @@
+{
+  "file": "f1-shakyamuni-ai-generated-restoration-hypothesis-front-v1.png",
+  "subject": "一层释迦牟尼主佛",
+  "variant": "风化前原貌推测复原",
+  "ai_generated": true,
+  "is_documentary_photo": false,
+  "historical_reconstruction_verified": false,
+  "generator": "OpenAI built-in image_gen",
+  "generated_on": "2026-10-28",
+  "width": 1024,
+  "height": 1536,
+  "references": [
+    {
+      "path": "tripo-test/f1-shakyamuni/B-real-photo-front.jpg",
+      "sha256": "ef6f32059115e77f37fe00afd07e819758959578ad164d4034ddaeba0d4d3ebd"
+    },
+    {
+      "path": "static/ref/floor1_statue.jpg",
+      "sha256": "8a5b1a0ce3aca366db75f224a84a2d051a93992a7c0d045553364ee8600cb71f"
+    }
+  ],
+  "prompt": "Use case: identity-preserve / scientific-educational reference. Create ONE high-resolution photorealistic reference image of the specific historical painted clay Buddha statue in the supplied reference photos, for image-to-3D modeling. This is an AI-generated visualization, not a documentary photograph. Portrait composition, exactly centered, perfectly straight frontal elevation, camera at the mid-height of the seated figure, no low-angle distortion, no three-quarter angle, no tilted head or perspective asymmetry. Whole seated figure visible from top of ushnisha to the bottom of the crossed knees with breathing room, both ears and all fingers unobstructed. Plain seamless light neutral gray studio background, soft balanced diffuse lighting, delicate grounding shadow, no dramatic rim lighting, all details in focus. Real tactile painted clay, believable mineral pigment and metal leaf, not flesh, not plastic, not smooth CGI. Preserve the unique facial proportions, garment cuts, silhouette, seated pose and hand gestures of THIS actual statue; do not substitute a generic Buddha. No temple, no other statues, no worshippers, no halos, no text, no labels, no watermarks. AI identification will be stored in the filename and accompanying provenance metadata. Output one single image, not a diptych.\nSubject: the FIRST-FLOOR colossal Shakyamuni of Yingxian Wooden Pagoda. Reference 1 is the actual close-up color photograph; reference 2 is a rotated photograph of an exhibition view and is secondary for the full crossed-leg silhouette (mentally rotate it upright). Preserve the broad round gilded face, dark blue small hair curls and ushnisha, heavy arched brows, half closed painted eyes, small red lips, long earlobes, massive torso, exposed chest, red robe with pale turquoise/ivory edges and surviving floral borders and circular motifs around the waist. Right hand on viewer LEFT is raised near shoulder exactly as in the actual reference, preserve the specific bent/extended fingers and hanging narrow yellow cloth; left hand on viewer RIGHT rests across the bent knee, palm orientation and fingers matching reference. Do not change the raised hand into the wisdom-fist mudra. Include the whole crossed-leg statue body; exclude the enormous lotus pedestal and supporting warrior figures, so the isolated body's outline ends at the crossed knees.\nVariant B — HYPOTHETICAL ORIGINAL UNWEATHERED CONDITION. Carefully reconstruct the same statue before weathering and damage. Restore missing surface finish by continuing surviving painted patterns and gilding, heal cracks and surface losses, complete hair curls and fingers without changing their pose. Gild the bare face, neck, chest and hands consistently with surviving gold traces; retain red garment fields, restrained mineral blue-green/ivory borders, and existing circular/floral designs only. Keep the historical face, bodily mass, hand shapes and drapery identical to the reference, not idealized into a new statue. Gold leaf should show subtle overlaps and artisan texture, pigments matte and naturally rich, handcrafted painted-clay sculpture with minute brushwork and tool irregularities. It should look newly completed by historical artisans, not shiny molded merchandise. Exact original colors are uncertain; use conservative plausible completion from existing traces, no invented jewels/crowns, no lavish new motifs.",
+  "refinement_prompt": "Edit this specific AI-generated hypothetical restoration image. Preserve exactly its Buddha identity, frontal composition, face proportions, expression, eye shape, hand gesture, finger geometry, body silhouette, garment folds, existing decorative motifs, framing, neutral gray background and soft realistic lighting. Make only this correction: the surface must now look freshly completed BEFORE centuries of weathering. Remove ALL distressed flecks, scratches, peeling paint, faded patches, dirty seams, crack networks, worn corners and missing pigment from the robe, skin, hair and crossed legs. Repaint the SAME fields and SAME patterns with continuous, clean, evenly saturated mineral pigments: fresh restrained cinnabar red, mineral blue-green, warm ivory, deep blue curls. Gold leaf on exposed skin is complete, clean and softly luminous, with only very subtle leaf seams and microscopic handmade texture; absolutely no dark tarnish, oxidation or rubbed-through patches. Fill the patterns continuously rather than introducing new patterns. This is a real handcrafted painted-clay statue in its newly finished state, photographed professionally, not an aged antique, not polished plastic, not a cartoon and not glossy CGI. Fresh paint can be matte and richly colored without any simulated aging. Keep fine hand-brushed edges and subtle clay surface grain for realism. Do NOT alter the anatomy or mudra. No additional objects, text or watermark. One image at the same portrait aspect ratio.",
+  "generated_original_sha256": "f6281bb71113c61b225e3a5f6b1323ff779a92b8fdbf13f13cc6472b9fdefd24",
+  "file_sha256": "03ce533774e26ca0fab824bd280fd247ca9c943b718fd71ca0abc01b2c58fea4",
+  "local_processing": "仅添加 PNG AI 生成文字元数据；IDAT 图像数据未改变",
+  "scope": "完整坐姿像身，不含大型莲座/力士基座",
+  "limitations": [
+    "正面视角和细节由 AI 推断，非实物测绘",
+    "复原版色彩、贴金范围及纹样补全为推测，不能证明初建原貌"
+  ],
+  "review": "已目视核看：正面单尊、完整坐姿、面部和手印可见；未作精确几何校验"
+}

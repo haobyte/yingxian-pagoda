@@ -1,0 +1,57 @@
+{
+  "file": "f5-samantabhadra-ai-generated-present-front-v1.png",
+  "subject": "普贤菩萨（照片对应待核实）",
+  "variant": "现貌参考重建",
+  "ai_generated": true,
+  "is_documentary_photo": false,
+  "historical_reconstruction_verified": false,
+  "generator": "OpenAI built-in image_gen",
+  "generated_on": "2026-10-28",
+  "width": 1024,
+  "height": 1536,
+  "references": [
+    {
+      "path": "tripo-test/picks/25-f5-samantabhadra.jpg",
+      "role": "subject_reference",
+      "sha256": "fafec4cff855dd917b22a74213c00da12c1a0a21b52441b0884558a7fed65dfa"
+    },
+    {
+      "path": "tripo-test/ai-generated-reference/2026-10-28/f5-vairocana-ai-generated-present-front-v1.png",
+      "role": "style_only",
+      "sha256": "6b2e267b83063fa6788c669d2b6ca165684552cef7821878350a7025cff31d80"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Generate ONE portrait 1024x1536 photorealistic museum reference visualization of the specific Yingxian Wooden Pagoda fifth-floor painted clay statue in reference image 1. Reference image 2 is STYLE ONLY, never copy its Buddha identity or mudra. Exactly centered straight frontal elevation, camera at mid-height, no low angle, full seated body including crown/hair, both hands and crossed knees, closely attached lotus seat and simple immediate seat board visible with margins; omit tall lower pedestal. Neutral seamless light gray background, soft balanced diffuse lighting, subtle contact shadow, sharp tactile clay and mineral pigments, no flesh or plastic CGI. Preserve individual face proportions, sculpted garment, ornaments and photographed hand gestures rather than generic iconography. Remove temple and all other figures. No text, watermark, halo, collage or diptych. AI visualization not documentary evidence. Unseen details inferred conservatively. Subject label (provisional where noted): 普贤菩萨（照片对应待核实）. Low ornamental crown and topknot, rounded face, ornate chest panel, both forearms forward palms up. Same photograph as Maitreya candidate, identity unresolved. No elephant. PRESENT CONDITION: preserve photographed worn brown gray-beige clay, patchy pale ground, faded pigment remnants, chips and irregular abrasion. Do not restore or add vivid color.",
+  "refinement_prompt": null,
+  "generated_original_sha256": "d390765d158de1f51ddbbcf76dd3a74541048c9a6906286863d17da99724d13d",
+  "file_sha256": "20883a5bed76c64f68656bd7f374a6d9e9da57b70c08772f60cfe721f8e13f67",
+  "local_processing": "仅插入 PNG AI 文字元数据，IDAT 图像数据未改变",
+  "scope": "坐姿像身、紧接莲座和简化座板；不含高台基",
+  "limitations": [
+    "正面视角及遮挡细节由 AI 推断，非实物测绘",
+    "生成图不能反证造像身份、手印或历史原色",
+    "推测复原未获颜料检测或初建图像验证，不代表已证实的辽代原貌",
+    "弥勒候选照片与普贤照片 SHA-256 完全相同；两组图仅按现有资源键分别生成，不能视为两尊独立实物的可靠复原，需补充独立照片核实身份"
+  ],
+  "review": "已逐张目视检查构图、彩绘状态与主要手位；仍有 AI 解释误差，不作为实物测绘",
+  "generation_history": [
+    {
+      "stage": "initial",
+      "prompt": "Use case: scientific-educational. Generate ONE portrait 1024x1536 photorealistic museum reference visualization of the specific Yingxian Wooden Pagoda fifth-floor painted clay statue in reference image 1. Reference image 2 is STYLE ONLY, never copy its Buddha identity or mudra. Exactly centered straight frontal elevation, camera at mid-height, no low angle, full seated body including crown/hair, both hands and crossed knees, closely attached lotus seat and simple immediate seat board visible with margins; omit tall lower pedestal. Neutral seamless light gray background, soft balanced diffuse lighting, subtle contact shadow, sharp tactile clay and mineral pigments, no flesh or plastic CGI. Preserve individual face proportions, sculpted garment, ornaments and photographed hand gestures rather than generic iconography. Remove temple and all other figures. No text, watermark, halo, collage or diptych. AI visualization not documentary evidence. Unseen details inferred conservatively. Subject label (provisional where noted): 普贤菩萨（照片对应待核实）. Low ornamental crown and topknot, rounded face, ornate chest panel, both forearms forward palms up. Same photograph as Maitreya candidate, identity unresolved. No elephant. PRESENT CONDITION: preserve photographed worn brown gray-beige clay, patchy pale ground, faded pigment remnants, chips and irregular abrasion. Do not restore or add vivid color.",
+      "sha256": "d390765d158de1f51ddbbcf76dd3a74541048c9a6906286863d17da99724d13d",
+      "inputs": [
+        {
+          "path": "tripo-test/picks/25-f5-samantabhadra.jpg",
+          "role": "subject_reference",
+          "sha256": "fafec4cff855dd917b22a74213c00da12c1a0a21b52441b0884558a7fed65dfa"
+        },
+        {
+          "path": "tripo-test/ai-generated-reference/2026-10-28/f5-vairocana-ai-generated-present-front-v1.png",
+          "role": "style_only",
+          "sha256": "6b2e267b83063fa6788c669d2b6ca165684552cef7821878350a7025cff31d80"
+        }
+      ],
+      "selection": "最终选用"
+    }
+  ]
+}

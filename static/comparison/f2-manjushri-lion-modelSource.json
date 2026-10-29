@@ -1,0 +1,57 @@
+{
+  "task_id": "d89c2d83-ea98-4566-82be-5201ce114740",
+  "formal_key": "f2-manjushri-lion",
+  "identity": "二层文殊（项目配置为骑狮）",
+  "mapping_status": "confirmed",
+  "identity_basis": "项目配置与本地参考图的视觉对应；不是独立文物鉴定",
+  "raw_file": "tripo-test/generated/d89c2d83-ea98-4566-82be-5201ce114740.glb",
+  "formal_file": "static/models/statues/f2-manjushri-lion.glb",
+  "raw_sha256": "32bc10499a8599a4b91dd4c9c1f48594d0b918ec6f4c5733362a28eb9654693e",
+  "formal_sha256": "0afd94b2395af831dd1abfe3c000c7c6a694108b0d6f3b657d5e05b240296562",
+  "preview_files": [
+    "tripo-test/generated-preview/d89c2d83_0.png",
+    "tripo-test/generated-preview/d89c2d83_1.png",
+    "tripo-test/generated-preview/d89c2d83_2.png",
+    "tripo-test/generated-preview/d89c2d83_3.png"
+  ],
+  "visually_corresponding_reference": "tripo-test/picks/8-f2-bodhisattva-on-lion.jpg",
+  "generation_input_status": "视觉相符；未找到上传或生成任务日志，不能证明此文件就是实际输入",
+  "visual_observations": "蓝色披帛、黄色腿部、冠饰和彩色莲座相符；生成模型没有完整狮子。",
+  "evidence": {
+    "base_color_texture_raw_sha256": "1023bf56f39122db59b607db0af6b96acfde79813068f3edda4ae40515be2d0e",
+    "base_color_texture_formal_sha256": "1023bf56f39122db59b607db0af6b96acfde79813068f3edda4ae40515be2d0e",
+    "base_color_texture_exact_bytes": true,
+    "raw_base_color_dimensions": [
+      2048,
+      2048
+    ],
+    "formal_base_color_dimensions": [
+      2048,
+      2048
+    ],
+    "base_color_rgb_mae_128": 0,
+    "mae_method": "Pillow RGB; resize 128x128 BICUBIC; mean absolute channel error on 0..255",
+    "raw_extent_height_normalized": [
+      0.6318525888946285,
+      1,
+      0.6270051226242698
+    ],
+    "formal_extent_height_normalized": [
+      0.6317678689956665,
+      1,
+      0.6270244717597961
+    ],
+    "max_normalized_extent_difference": 0.0000847198989619713,
+    "raw_triangles": 1381862,
+    "formal_triangles": 79999,
+    "raw_generator": "gltfpack 1.2",
+    "formal_generator": "Khronos glTF Blender I/O v5.2.40"
+  },
+  "audit_date": "2026-10-28",
+  "unknowns": [
+    "生成提示词与生成参数",
+    "原始下载日期",
+    "实际上传输入文件",
+    "具体后处理操作日志"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "task_id": "a1ff5372-e17c-4255-9903-a38a0cb77ee4",
+  "formal_key": "f2-attendant-blue",
+  "identity": "二层蓝色披带立胁侍菩萨",
+  "mapping_status": "confirmed",
+  "identity_basis": "项目配置与本地参考图的视觉对应；不是独立文物鉴定",
+  "raw_file": "tripo-test/generated/a1ff5372-e17c-4255-9903-a38a0cb77ee4.glb",
+  "formal_file": "static/models/statues/f2-attendant-blue.glb",
+  "raw_sha256": "130f570ffb4d004ee04ca3394aac14a680c47f45566e05aa86f116729aa7f17d",
+  "formal_sha256": "2b3119aab54c8fa3a3e526da43e44b121fd977a917abe0da6b1f4e27e6690e58",
+  "preview_files": [
+    "tripo-test/generated-preview/a1ff5372_0.png",
+    "tripo-test/generated-preview/a1ff5372_1.png",
+    "tripo-test/generated-preview/a1ff5372_2.png",
+    "tripo-test/generated-preview/a1ff5372_3.png"
+  ],
+  "visually_corresponding_reference": "tripo-test/picks/2-f2-attendant-blue.jpg",
+  "generation_input_status": "视觉相符；未找到上传或生成任务日志，不能证明此文件就是实际输入",
+  "visual_observations": "蓝色披带、青绿色腰部与红裙相符。",
+  "evidence": {
+    "base_color_texture_raw_sha256": "d11d158ed37762fa905a6ed2439650f872a942438d67480cd6e1dbe8cdff4129",
+    "base_color_texture_formal_sha256": "d11d158ed37762fa905a6ed2439650f872a942438d67480cd6e1dbe8cdff4129",
+    "base_color_texture_exact_bytes": true,
+    "raw_base_color_dimensions": [
+      2048,
+      2048
+    ],
+    "formal_base_color_dimensions": [
+      2048,
+      2048
+    ],
+    "base_color_rgb_mae_128": 0,
+    "mae_method": "Pillow RGB; resize 128x128 BICUBIC; mean absolute channel error on 0..255",
+    "raw_extent_height_normalized": [
+      0.29776601183472373,
+      1,
+      0.32375291843734727
+    ],
+    "formal_extent_height_normalized": [
+      0.2980530560016632,
+      1,
+      0.32375794649124146
+    ],
+    "max_normalized_extent_difference": 0.0002870441669394763,
+    "raw_triangles": 671226,
+    "formal_triangles": 59999,
+    "raw_generator": "gltfpack 1.2",
+    "formal_generator": "Khronos glTF Blender I/O v5.2.40"
+  },
+  "audit_date": "2026-10-28",
+  "unknowns": [
+    "生成提示词与生成参数",
+    "原始下载日期",
+    "实际上传输入文件",
+    "具体后处理操作日志"
+  ]
+}

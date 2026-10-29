@@ -1,0 +1,31 @@
+{
+  "file": "f3-ratnasambhava-ai-generated-present-front-v1.png",
+  "subject": "三层南方宝生佛",
+  "variant": "现貌参考重建",
+  "ai_generated": true,
+  "is_documentary_photo": false,
+  "historical_reconstruction_verified": false,
+  "generator": "OpenAI built-in image_gen",
+  "generated_on": "2026-10-28",
+  "width": 1024,
+  "height": 1536,
+  "references": [
+    {
+      "path": "tripo-test/picks/19-f3-ratnasambhava.jpg",
+      "sha256": "18352d21e891cef02c51aaf83d05c644714640acb9678d32c6de0c911a5c843e"
+    }
+  ],
+  "prompt": "Create ONE high-resolution portrait 1024x1536 photorealistic frontal reference image for image-to-3D modeling, based on the supplied actual photograph of a specific Yingxian Wooden Pagoda clay statue. The identity, facial proportions, seated anatomy, hands and drapery must be this particular reference statue, not a generic Buddhist statue. This is AI-generated reference imagery, not a documentary photograph. Precisely straight-on front view, no three-quarter angle, camera centered at mid-height, upright axis, near orthographic/long-lens perspective. Show full sculpture and specified attached seat with complete top and bottom and narrow even margins. Neutral seamless light gray background, soft even diffuse studio light, subtle grounding shadow. Detailed real hand-modeled painted clay, matte mineral pigments and plausible gold leaf, physically believable surface grain, NOT living skin, plastic, cartoon or shiny CGI. Face and both hands clearly readable and in focus. No temple architecture, neighbors, altar offerings, measuring marks, halo, captions or watermarks; AI identification will be in filename, PNG metadata and sidecar. Output a single image only, not a collage.\nSpecific subject: third-floor SOUTHERN RATNASAMBHAVA. Preserve its particular round face, narrow half-closed eyes, small mouth, curled hair and ushnisha, long ears, exposed broad gold chest, front-tied inner garment at waist and open flowing robe. CRITICAL: statue's RIGHT hand on viewer LEFT is held low beside its knee, OPEN PALM UP/OUTWARD, fingers gently relaxed in giving gesture. It must NOT become palm-down earth-touching. Its LEFT hand on viewer RIGHT is cupped at the lower abdomen with naturally curled fingers, exactly like reference. Both knees in full cross-legged pose. Include the complete substantial seat with the distinctive long folded cloth draped in broad hanging swags across the front and sides and the compact polygonal layered supporting base. Preserve this draped seat; DO NOT substitute a fully exposed generic lotus-petal pedestal. Preserve visible support motifs conservatively without inventing additional animals.\nVERSION A, PRESENT CONDITION. Faithfully retain all visible aging from the color photograph: the specific patches of gold loss and exposed clay on face/chest, dirty gray-beige ground, hair wear, flaked robe paint, cracks and chips, local faint blue-green/red remnants, and the dull worn seat. Preserve the colored patch pattern and sculptural irregularities as far as reference allows. Illuminate and clarify the same surviving object; do not repair/beautify it, add new elaborate decoration or turn all bare skin gold. Plain gray background should be clean, not distressed.",
+  "refinement_prompt": null,
+  "refinement_inputs": [],
+  "generated_original_sha256": "aa4a645014dc962d358cf007e9d94ae66930569cc20c85372bd606e0fe10d020",
+  "file_sha256": "bd424f4ca325deb79ef8bd146c3ce9724db9da0f83cb18797d03d6a8fe0a0cb1",
+  "local_processing": "仅添加 PNG AI 生成文字元数据；IDAT 图像数据未改变",
+  "scope": "完整坐姿像身、垂布佛座及照片所示底座",
+  "limitations": [
+    "正面视角和遮挡细节由 AI 推断，非实物测绘",
+    "尽量保留参考照片风化状态，损伤位置和细节仍可能偏离实物",
+    "座下支承细节与手指细节存在推断，应用于严谨复原前须再核对实拍"
+  ],
+  "review": "已目视核看：单尊正面、完整构图、面部及双手可见；阿閦佛向下触地手势，宝生佛低位掌心向上，普贤胸前持手/腹前托持与右腿下垂；未作精确几何校验"
+}

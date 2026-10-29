@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>造像对照册 · 应县木塔</title><meta name="description" content="应县木塔五层造像的真实照片、AI现貌参考、原貌推测复原与三维模型对照。"></head>
+<body>
+<header><a class="back" href="./">← 木塔三维展示</a><span class="edition">应县木塔 · 造像档案</span></header>
+<main>
+<section class="intro"><p class="eyebrow">SCULPTURE ATLAS / 01—05</p><h1>一尊造像，<br>四种观看方式。</h1><div class="intro-bottom"><p>对照 AI 现貌重建、风化前外观推测与三维模型。<br>看见已知的形制，也保留尚待核实的部分。</p><div class="totals"><span><b>26</b>造像</span><span><b>52</b>AI 参考图</span><span><b id="model-count">26</b>三维模型</span></div></div></section>
+<aside class="notice">AI 图像均为生成参考，非实拍；“原貌”是风化前外观的推测，不代表已证实的辽代初建原貌。模型栏展示当前已接入的独立 GLB，底座与坐骑可能不完整。</aside>
+<nav class="filters" aria-label="按楼层筛选"><div id="floor-filters"></div><label class="search"><span>查找造像</span><input type="search" id="search" placeholder="名称或资源编号" aria-label="搜索造像"></label></nav>
+<p class="result-count" id="result-count" aria-live="polite"></p>
+<div id="catalogue"></div><p id="no-results" hidden>没有匹配的造像，请换一个名称或楼层。</p>
+<footer>应县木塔 · 造像对照册 <span>真实记录 / 图像推测 / 数字模型</span></footer>
+</main>
+<dialog id="image-dialog"><button class="dialog-close" aria-label="关闭大图">×</button><img alt=""><p></p></dialog>
+<dialog id="model-dialog"><div class="model-heading"><div><p class="eyebrow">3D VIEWER</p><h2 id="model-title"></h2></div><button class="model-close" aria-label="关闭模型">×</button></div><div id="model-stage"><p id="model-status" role="status">正在加载模型…</p></div><div class="model-footer"><span>拖动旋转 · 滚动缩放 · 右键平移</span><button id="previous-model">上一尊</button><button id="next-model">下一尊</button><button id="reset-model">正面</button><button id="side-model">侧面</button><button id="back-model">背面</button><a id="model-source" target="_blank" rel="noopener">模型来源 ↗</a><a id="download-model" download>下载 GLB ↗</a></div></dialog>
+<script type="module" src="/src/statues-comparison.js"></script>
+</body></html>

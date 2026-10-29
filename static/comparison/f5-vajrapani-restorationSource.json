@@ -1,0 +1,91 @@
+{
+  "file": "f5-vajrapani-ai-generated-restoration-hypothesis-front-v1.png",
+  "subject": "金刚手菩萨",
+  "variant": "风化前原貌推测复原",
+  "ai_generated": true,
+  "is_documentary_photo": false,
+  "historical_reconstruction_verified": false,
+  "generator": "OpenAI built-in image_gen",
+  "generated_on": "2026-10-28",
+  "width": 1024,
+  "height": 1536,
+  "references": [
+    {
+      "path": "tripo-test/picks/22-f5-vajrapani.jpg",
+      "role": "subject_reference",
+      "sha256": "8201e94d4bc268a5276463ed0094e49a1ec44555549c41772959c3f6a1b7606c"
+    },
+    {
+      "path": "tripo-test/ai-generated-reference/2026-10-28/f5-vairocana-ai-generated-present-front-v1.png",
+      "role": "style_only",
+      "sha256": "6b2e267b83063fa6788c669d2b6ca165684552cef7821878350a7025cff31d80"
+    },
+    {
+      "path": "tripo-test/ai-generated-reference/2026-10-28/f5-vairocana-ai-generated-restoration-hypothesis-front-v1.png",
+      "role": "restoration_style_only",
+      "sha256": "3dfa2edbcf601a36bb4a67d83e657d7e61dbe8410d956e052f69e5f72f9f34f6"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Generate ONE portrait 1024x1536 photorealistic museum reference visualization of the specific Yingxian Wooden Pagoda fifth-floor painted clay statue in reference image 1. Reference image 2 is STYLE ONLY, never copy its Buddha identity or mudra. Exactly centered straight frontal elevation, camera at mid-height, no low angle, full seated body including crown/hair, both hands and crossed knees, closely attached lotus seat and simple immediate seat board visible with margins; omit tall lower pedestal. Neutral seamless light gray background, soft balanced diffuse lighting, subtle contact shadow, sharp tactile clay and mineral pigments, no flesh or plastic CGI. Preserve individual face proportions, sculpted garment, ornaments and photographed hand gestures rather than generic iconography. Remove temple and all other figures. No text, watermark, halo, collage or diptych. AI visualization not documentary evidence. Unseen details inferred conservatively. Subject label (provisional where noted): 金刚手菩萨. Tall leaf crown, ornate scalloped cape; left hand viewer right chest high with thumb and finger nearly touching, right palm up near waist. No invented weapon. HYPOTHETICAL RESTORATION: same specific sculpture and hand pose, conservatively repair cracks and losses and reinstate plausible mineral-pigment decoration guided by surviving traces: restrained ochre gilding accents, vermilion, blue-green and ivory, dark hair. Physically painted clay, not living person or shiny metal. This is a conjectural pre-weathering appearance, NOT a verified Liao original. Do not invent attributes or new decoration forms.",
+  "refinement_prompt": "Edit reference image 1 only. Rotate the camera to a TRUE EXACT STRAIGHT-ON FRONT ELEVATION centered on the statue's facial midline. Both ears equally visible, nose centered, shoulders level equally wide, no visible side plane, knees symmetrical in projection. Camera at body mid-height, absolutely no three-quarter view, no turned head. Preserve the specific facial proportions, original hand gesture and anatomy, clothing shapes, clean unweathered mineral pigment colors, golden ornaments and matte clay. Keep full crown through seat board and neutral gray backdrop, diffuse studio light. Remove tall pedestal below lotus; include lotus and immediate shallow seat board only. 1024x1536, single statue no text. Hypothetical reconstruction not documentary photo.",
+  "generated_original_sha256": "5ad947d8afd9f59bee375a088f6a2ea27458aae5da6ba4bd25014b83a34eeea9",
+  "file_sha256": "b13e3391d9a672b54c2d421903efe54e532cece71fe4ca1474c8cba5cebbe062",
+  "local_processing": "仅插入 PNG AI 文字元数据，IDAT 图像数据未改变",
+  "scope": "坐姿像身、紧接莲座和简化座板；不含高台基",
+  "limitations": [
+    "正面视角及遮挡细节由 AI 推断，非实物测绘",
+    "生成图不能反证造像身份、手印或历史原色",
+    "推测复原未获颜料检测或初建图像验证，不代表已证实的辽代原貌"
+  ],
+  "review": "已逐张目视检查构图、彩绘状态与主要手位；仍有 AI 解释误差，不作为实物测绘",
+  "generation_history": [
+    {
+      "stage": "initial",
+      "prompt": "Use case: scientific-educational. Generate ONE portrait 1024x1536 photorealistic museum reference visualization of the specific Yingxian Wooden Pagoda fifth-floor painted clay statue in reference image 1. Reference image 2 is STYLE ONLY, never copy its Buddha identity or mudra. Exactly centered straight frontal elevation, camera at mid-height, no low angle, full seated body including crown/hair, both hands and crossed knees, closely attached lotus seat and simple immediate seat board visible with margins; omit tall lower pedestal. Neutral seamless light gray background, soft balanced diffuse lighting, subtle contact shadow, sharp tactile clay and mineral pigments, no flesh or plastic CGI. Preserve individual face proportions, sculpted garment, ornaments and photographed hand gestures rather than generic iconography. Remove temple and all other figures. No text, watermark, halo, collage or diptych. AI visualization not documentary evidence. Unseen details inferred conservatively. Subject label (provisional where noted): 金刚手菩萨. Tall leaf crown, ornate scalloped cape; left hand viewer right chest high with thumb and finger nearly touching, right palm up near waist. No invented weapon. HYPOTHETICAL RESTORATION: same specific sculpture and hand pose, conservatively repair cracks and losses and reinstate plausible mineral-pigment decoration guided by surviving traces: restrained ochre gilding accents, vermilion, blue-green and ivory, dark hair. Physically painted clay, not living person or shiny metal. This is a conjectural pre-weathering appearance, NOT a verified Liao original. Do not invent attributes or new decoration forms.",
+      "selection": "未采用：风化残留过多",
+      "sha256": "edeb58e78df06614167a97f0d6c7c85c0f29a2830ec7f19ffd0d1daedb858dcf",
+      "inputs": [
+        {
+          "path": "tripo-test/picks/22-f5-vajrapani.jpg",
+          "role": "subject_reference",
+          "sha256": "8201e94d4bc268a5276463ed0094e49a1ec44555549c41772959c3f6a1b7606c"
+        },
+        {
+          "path": "tripo-test/ai-generated-reference/2026-10-28/f5-vairocana-ai-generated-present-front-v1.png",
+          "role": "style_only",
+          "sha256": "6b2e267b83063fa6788c669d2b6ca165684552cef7821878350a7025cff31d80"
+        }
+      ]
+    },
+    {
+      "stage": "clean_paint_restoration",
+      "prompt": "CRITICAL: Show this sculpture freshly finished BEFORE ALL weathering. Absolutely NO peeling paint, white exposed ground patches, distressed flecks, chips, cracks, grime or rubbed surfaces anywhere. Continuous clean matte mineral pigment on every painted field and complete restrained gold accents. Preserve specific face, ornaments, silhouette and photographed hand gestures. Same neutral gray studio frontal full figure composition 1024x1536. Reference 1 is specific subject geometry ONLY; do NOT copy its aged surface. Reference 2 is the desired newly completed material finish and studio STYLE ONLY, do NOT copy its Buddha identity, anatomy or mudra. Skin is continuous warm ivory mineral paint, ornaments restrained gold, garments vermilion, blue-green and ivory with shapes guided by original carving. No new attributes, halos, weapons, extra figures or text. Photoreal hand-painted clay with subtle artisan grain, NOT aged antique or plastic CGI. Hypothetical restoration, not verified historical original. Specific subject: 金刚手菩萨. Tall leaf crown, ornate scalloped cape; left hand viewer right chest high with thumb and finger nearly touching, right palm up near waist. No invented weapon.",
+      "selection": "用于正面视角修订",
+      "sha256": "2b1301f1adc70313269a4db1f9eb1e31d09698decaa8be286ccf80db866aa11d",
+      "inputs": [
+        {
+          "path": "tripo-test/picks/22-f5-vajrapani.jpg",
+          "role": "subject_reference",
+          "sha256": "8201e94d4bc268a5276463ed0094e49a1ec44555549c41772959c3f6a1b7606c"
+        },
+        {
+          "path": "tripo-test/ai-generated-reference/2026-10-28/f5-vairocana-ai-generated-restoration-hypothesis-front-v1.png",
+          "role": "restoration_style_only",
+          "sha256": "3dfa2edbcf601a36bb4a67d83e657d7e61dbe8410d956e052f69e5f72f9f34f6"
+        }
+      ]
+    },
+    {
+      "stage": "frontal_refinement",
+      "prompt": "Edit reference image 1 only. Rotate the camera to a TRUE EXACT STRAIGHT-ON FRONT ELEVATION centered on the statue's facial midline. Both ears equally visible, nose centered, shoulders level equally wide, no visible side plane, knees symmetrical in projection. Camera at body mid-height, absolutely no three-quarter view, no turned head. Preserve the specific facial proportions, original hand gesture and anatomy, clothing shapes, clean unweathered mineral pigment colors, golden ornaments and matte clay. Keep full crown through seat board and neutral gray backdrop, diffuse studio light. Remove tall pedestal below lotus; include lotus and immediate shallow seat board only. 1024x1536, single statue no text. Hypothetical reconstruction not documentary photo.",
+      "sha256": "5ad947d8afd9f59bee375a088f6a2ea27458aae5da6ba4bd25014b83a34eeea9",
+      "inputs": [
+        {
+          "sha256": "2b1301f1adc70313269a4db1f9eb1e31d09698decaa8be286ccf80db866aa11d",
+          "role": "previous_generated_image"
+        }
+      ],
+      "selection": "最终选用"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "task_id": "be10c6c8-7752-404b-b394-0691259f1867",
+  "formal_key": "f4-ananda",
+  "identity": "四层阿难（沿用项目配置）",
+  "mapping_status": "confirmed",
+  "identity_basis": "项目配置与本地参考图的视觉对应；不是独立文物鉴定",
+  "raw_file": "tripo-test/generated/be10c6c8-7752-404b-b394-0691259f1867.glb",
+  "formal_file": "static/models/statues/f4-ananda.glb",
+  "raw_sha256": "c0aa9d3e4fc170b34dc002855412f860988c89802225832d0f8f4ca0610179f8",
+  "formal_sha256": "03dee11eff6009b6c4940f1f893f16aa0757ff564be6ccf5bde43fd3105fa3c0",
+  "preview_files": [
+    "tripo-test/generated-preview/be10c6c8_0.png",
+    "tripo-test/generated-preview/be10c6c8_1.png",
+    "tripo-test/generated-preview/be10c6c8_2.png",
+    "tripo-test/generated-preview/be10c6c8_3.png"
+  ],
+  "visually_corresponding_reference": "tripo-test/picks/6-f4-disciple-east.jpg",
+  "generation_input_status": "视觉相符；未找到上传或生成任务日志，不能证明此文件就是实际输入",
+  "visual_observations": "立像、胸前双手、袈裟和深色低底座相符；姓名不能单凭模型独立确认。",
+  "evidence": {
+    "base_color_texture_raw_sha256": "4ab3027969ebe0872f20cbc1ca281b5c0dfcde2a21e38d56c2b456b011b9e68b",
+    "base_color_texture_formal_sha256": "4ab3027969ebe0872f20cbc1ca281b5c0dfcde2a21e38d56c2b456b011b9e68b",
+    "base_color_texture_exact_bytes": true,
+    "raw_base_color_dimensions": [
+      2048,
+      2048
+    ],
+    "formal_base_color_dimensions": [
+      2048,
+      2048
+    ],
+    "base_color_rgb_mae_128": 0,
+    "mae_method": "Pillow RGB; resize 128x128 BICUBIC; mean absolute channel error on 0..255",
+    "raw_extent_height_normalized": [
+      0.31037141090118087,
+      1,
+      0.33529241156858114
+    ],
+    "formal_extent_height_normalized": [
+      0.3103681802749634,
+      1,
+      0.33535048365592957
+    ],
+    "max_normalized_extent_difference": 0.00005807208734842639,
+    "raw_triangles": 595012,
+    "formal_triangles": 60000,
+    "raw_generator": "gltfpack 1.2",
+    "formal_generator": "Khronos glTF Blender I/O v5.2.40"
+  },
+  "audit_date": "2026-10-28",
+  "unknowns": [
+    "生成提示词与生成参数",
+    "原始下载日期",
+    "实际上传输入文件",
+    "具体后处理操作日志"
+  ]
+}

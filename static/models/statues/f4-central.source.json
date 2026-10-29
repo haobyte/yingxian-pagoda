@@ -1,0 +1,57 @@
+{
+  "task_id": "8c024c9a-3fe4-4b7c-943c-43ab0c4e703c",
+  "formal_key": "f4-central",
+  "identity": "四层中央主尊（释迦/毗卢遮那称谓存疑）",
+  "mapping_status": "confirmed",
+  "identity_basis": "项目配置与本地参考图的视觉对应；不是独立文物鉴定",
+  "raw_file": "tripo-test/generated/8c024c9a-3fe4-4b7c-943c-43ab0c4e703c.glb",
+  "formal_file": "static/models/statues/f4-central.glb",
+  "raw_sha256": "33a1cfd48b9e526a65fd951a2ec7b9bd829cc80c1e9a14c9f8d7c7cbd50ac02f",
+  "formal_sha256": "e27d58744415687d6a7a1730eee77b86f5e323ef32e0ce6ad2d1f059ef7ccb7f",
+  "preview_files": [
+    "tripo-test/generated-preview/8c024c9a_0.png",
+    "tripo-test/generated-preview/8c024c9a_1.png",
+    "tripo-test/generated-preview/8c024c9a_2.png",
+    "tripo-test/generated-preview/8c024c9a_3.png"
+  ],
+  "visually_corresponding_reference": "tripo-test/picks/4-f4-central.jpg",
+  "generation_input_status": "视觉相符；未找到上传或生成任务日志，不能证明此文件就是实际输入",
+  "visual_observations": "右手抬起、胸部褪金、双层莲瓣和多层方座相符。",
+  "evidence": {
+    "base_color_texture_raw_sha256": "6e82acf56639a0b364176ad003a407e7b3844b6c8ba170f333751b3044f2b14e",
+    "base_color_texture_formal_sha256": "6e82acf56639a0b364176ad003a407e7b3844b6c8ba170f333751b3044f2b14e",
+    "base_color_texture_exact_bytes": true,
+    "raw_base_color_dimensions": [
+      2048,
+      2048
+    ],
+    "formal_base_color_dimensions": [
+      2048,
+      2048
+    ],
+    "base_color_rgb_mae_128": 0,
+    "mae_method": "Pillow RGB; resize 128x128 BICUBIC; mean absolute channel error on 0..255",
+    "raw_extent_height_normalized": [
+      0.6904333234021062,
+      1,
+      0.669804699470168
+    ],
+    "formal_extent_height_normalized": [
+      0.690334677696228,
+      1,
+      0.6699188351631165
+    ],
+    "max_normalized_extent_difference": 0.00011413569294849157,
+    "raw_triangles": 1755726,
+    "formal_triangles": 79999,
+    "raw_generator": "gltfpack 1.2",
+    "formal_generator": "Khronos glTF Blender I/O v5.2.40"
+  },
+  "audit_date": "2026-10-28",
+  "unknowns": [
+    "生成提示词与生成参数",
+    "原始下载日期",
+    "实际上传输入文件",
+    "具体后处理操作日志"
+  ]
+}

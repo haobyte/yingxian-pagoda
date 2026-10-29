@@ -1,0 +1,924 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yingxian Wooden Pagoda · 1056 AD Timber Marvel (3D Interactive Documentary)</title>
+    <style>
+      :root {
+        --fg: #f6f1e7;
+        --muted: #c5bba8;
+        --gold: #e5b968;
+        --gold-bright: #ffd98a;
+        --red: #c44d3b;
+        --cyan: #6ec6ff;
+        --panel: rgba(18, 15, 12, 0.76);
+        --panel-strong: rgba(14, 11, 9, 0.88);
+        --border: rgba(229, 185, 104, 0.28);
+        --border-subtle: rgba(255, 255, 255, 0.12);
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        height: 100%;
+        background: #1a2433;
+        overflow: hidden;
+        font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+        color: var(--fg);
+        user-select: none;
+      }
+      canvas { display: block; outline: none; }
+
+      /* ---------- 加载帷幕 ---------- */
+      #loading {
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        color: var(--fg);
+        background: radial-gradient(circle at 50% 40%, #2c3e55 0%, #121822 100%);
+        transition: opacity 0.8s ease;
+      }
+      #loading .brand {
+        font-family: "Songti SC", "STSong", "Noto Serif SC", serif;
+        font-size: 32px;
+        letter-spacing: 0.24em;
+        color: var(--gold);
+        text-shadow: 0 4px 24px rgba(229, 185, 104, 0.35);
+      }
+      #loading .sub {
+        font-size: 13px;
+        color: var(--muted);
+        letter-spacing: 0.14em;
+      }
+      #loading .bar {
+        width: 200px;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 2px;
+        overflow: hidden;
+        margin-top: 6px;
+      }
+      #loading .bar::after {
+        content: "";
+        display: block;
+        width: 60%;
+        height: 100%;
+        background: var(--gold);
+        animation: loadSlide 1.2s infinite ease-in-out;
+      }
+      @keyframes loadSlide {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(200%); }
+      }
+
+      /* ---------- 顶部篇章导航栏 ---------- */
+      #topBar {
+        position: fixed;
+        top: 14px;
+        left: 16px;
+        right: 16px;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        pointer-events: none;
+      }
+      .top-box {
+        pointer-events: auto;
+        background: var(--panel);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        box-shadow: 0 10px 32px rgba(0, 0, 0, 0.38);
+      }
+      .brand-box {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 8px 16px;
+      }
+      .brand-seal {
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+        background: linear-gradient(135deg, #b84332, #85271b);
+        border: 1px solid rgba(255, 215, 150, 0.45);
+        display: grid;
+        place-items: center;
+        font-family: "Songti SC", "STSong", "Noto Serif SC", serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: #f9efe0;
+        box-shadow: inset 0 0 8px rgba(0,0,0,0.35);
+      }
+      .brand-title {
+        font-family: "Songti SC", "STSong", "Noto Serif SC", serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: var(--fg);
+        line-height: 1.15;
+      }
+      .brand-sub {
+        font-size: 11px;
+        color: var(--muted);
+        letter-spacing: 0.04em;
+      }
+
+      /* 五大篇章切换卡 */
+      #chapterTabs {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        gap: 4px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        max-width: 100%;
+      }
+      #chapterTabs::-webkit-scrollbar { display: none; }
+      .ch-tab {
+        background: transparent;
+        border: 1px solid transparent;
+        color: var(--muted);
+        padding: 6px 13px;
+        border-radius: 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 13px;
+        white-space: nowrap;
+        transition: all 0.22s ease;
+      }
+      .ch-tab:hover {
+        color: var(--fg);
+        background: rgba(255, 255, 255, 0.08);
+      }
+      .ch-tab .num {
+        font-family: "Songti SC", "STSong", "Noto Serif SC", serif;
+        font-size: 12px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--gold);
+        font-weight: 600;
+      }
+      .ch-tab.active {
+        background: linear-gradient(135deg, rgba(229, 185, 104, 0.28), rgba(184, 74, 57, 0.22));
+        border-color: rgba(229, 185, 104, 0.65);
+        color: #fff;
+        font-weight: 600;
+        box-shadow: 0 2px 12px rgba(229, 185, 104, 0.2);
+      }
+      .ch-tab.active .num {
+        background: var(--gold);
+        color: #1b140c;
+      }
+
+      /* 右侧导演控制按钮组 */
+      .director-actions {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 8px;
+      }
+      .btn-gold {
+        background: linear-gradient(135deg, #e5b968, #c7913b);
+        color: #1a1209;
+        border: none;
+        border-radius: 8px;
+        padding: 7px 14px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        box-shadow: 0 3px 14px rgba(229, 185, 104, 0.35);
+        transition: transform 0.15s, filter 0.15s;
+        white-space: nowrap;
+      }
+      .btn-gold:hover { filter: brightness(1.08); transform: translateY(-1px); }
+      .btn-gold.playing {
+        background: linear-gradient(135deg, #d85a46, #a83322);
+        color: #fff;
+        box-shadow: 0 3px 16px rgba(216, 90, 70, 0.45);
+      }
+      .btn-icon {
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--fg);
+        border: 1px solid var(--border-subtle);
+        border-radius: 8px;
+        padding: 6px 10px;
+        font-size: 12px;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: all 0.18s;
+      }
+      .btn-icon:hover { background: rgba(255, 255, 255, 0.2); }
+      .btn-icon.on {
+        background: rgba(229, 185, 104, 0.32);
+        border-color: var(--gold);
+        color: var(--gold-bright);
+      }
+
+      /* ---------- 左侧沉浸式叙事与交互面板 ---------- */
+      #ui {
+        position: fixed;
+        left: 16px;
+        top: 74px;
+        z-index: 15;
+        width: min(390px, calc(100vw - 32px));
+        max-height: calc(100vh - 165px);
+        overflow-y: auto;
+        color: var(--fg);
+        background: var(--panel);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 16px 18px;
+        font-size: 13px;
+        line-height: 1.6;
+        box-shadow: 0 14px 40px rgba(0, 0, 0, 0.42);
+        transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s;
+      }
+      #ui.hidden-panel {
+        transform: translateX(calc(-100% - 24px));
+        opacity: 0;
+        pointer-events: none;
+      }
+      #ui::-webkit-scrollbar { width: 4px; }
+      #ui::-webkit-scrollbar-thumb { background: rgba(229, 185, 104, 0.35); border-radius: 4px; }
+
+      .ch-kicker {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 11px;
+        color: var(--gold);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+      #storyTitle {
+        font-family: "Songti SC", "STSong", "Noto Serif SC", serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0 0 8px;
+        color: #fff;
+        letter-spacing: 0.04em;
+      }
+      /* 分镜步骤条 */
+      #stepPills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-bottom: 10px;
+      }
+      .step-pill {
+        background: rgba(255, 255, 255, 0.09);
+        color: var(--muted);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 6px;
+        padding: 4px 9px;
+        font-size: 11.5px;
+        cursor: pointer;
+        transition: all 0.18s;
+      }
+      .step-pill:hover { background: rgba(255, 255, 255, 0.18); color: #fff; }
+      .step-pill.active {
+        background: rgba(229, 185, 104, 0.32);
+        border-color: var(--gold);
+        color: #fff;
+        font-weight: 600;
+      }
+
+      /* 核心数据徽章 */
+      #storyBadges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 10px;
+      }
+      .badge {
+        font-size: 11px;
+        padding: 2px 8px;
+        border-radius: 4px;
+        background: rgba(229, 185, 104, 0.14);
+        border: 1px solid rgba(229, 185, 104, 0.35);
+        color: var(--gold-bright);
+        font-variant-numeric: tabular-nums;
+      }
+
+      #storySummary {
+        color: #e9e2d4;
+        font-size: 13px;
+        line-height: 1.68;
+        margin: 0 0 12px;
+        text-align: justify;
+      }
+
+      .step-nav-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        padding-top: 8px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .step-nav-btn {
+        flex: 1;
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--fg);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 7px;
+        padding: 6px 10px;
+        font-size: 12px;
+        cursor: pointer;
+        transition: background 0.18s;
+      }
+      .step-nav-btn:hover { background: rgba(229, 185, 104, 0.25); border-color: var(--gold); }
+
+      /* 章节专属交互子面板（如：五层佛像名录 / 结构拆解控制） */
+      #chapterExtra {
+        margin-top: 12px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      #chapterExtra:empty { display: none; }
+      .extra-title {
+        font-size: 11.5px;
+        color: var(--gold);
+        margin-bottom: 6px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+      }
+      .statue-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        max-height: 165px;
+        overflow-y: auto;
+      }
+      .statue-card {
+        background: rgba(255, 255, 255, 0.07);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 6px;
+        padding: 5px 8px;
+        cursor: pointer;
+        transition: all 0.16s;
+        text-align: left;
+      }
+      .statue-card:hover, .statue-card.active {
+        background: rgba(229, 185, 104, 0.24);
+        border-color: var(--gold);
+      }
+      .statue-card b { display: block; font-size: 12px; color: #fff; }
+      .statue-card span { font-size: 10.5px; color: var(--muted); }
+
+      /* 沙盘工具折叠区 */
+      details.sandbox-box {
+        margin-top: 10px;
+        padding-top: 8px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      details.sandbox-box summary {
+        font-size: 12px;
+        color: var(--muted);
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      details.sandbox-box summary::after { content: "▾"; font-size: 11px; }
+      details.sandbox-box[open] summary::after { content: "▴"; }
+      #ui .row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 7px; }
+      #ui button.tool-btn {
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--fg);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 6px;
+        padding: 4px 8px;
+        font-size: 11.5px;
+        cursor: pointer;
+      }
+      #ui button.tool-btn:hover { background: rgba(255, 255, 255, 0.2); }
+      #ui button.tool-btn.on {
+        background: rgba(229, 185, 104, 0.38);
+        border-color: var(--gold);
+        color: #fff;
+      }
+      #stats {
+        color: var(--muted);
+        font-size: 10.5px;
+        margin-top: 8px;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ---------- 3D 空间悬浮标注点 (Callout Pins) ---------- */
+      #pinsContainer {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 10;
+      }
+      .pin3d {
+        position: fixed;
+        left: 0;
+        top: 0;
+        transform: translate(14px, -50%);
+        background: rgba(16, 13, 10, 0.82);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(229, 185, 104, 0.45);
+        border-left: 3px solid var(--gold);
+        border-radius: 6px;
+        padding: 5px 10px;
+        max-width: 240px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+        transition: opacity 0.25s;
+      }
+      .pin3d::before {
+        content: "";
+        position: absolute;
+        left: -17px;
+        top: 50%;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--gold);
+        transform: translateY(-50%);
+        box-shadow: 0 0 0 4px rgba(229, 185, 104, 0.28);
+      }
+      .pin3d::after {
+        content: "";
+        position: absolute;
+        left: -9px;
+        top: 50%;
+        width: 9px;
+        height: 1px;
+        background: rgba(229, 185, 104, 0.6);
+      }
+      .pin3d.cyan { border-left-color: var(--cyan); border-color: rgba(110, 198, 255, 0.4); }
+      .pin3d.cyan::before { background: var(--cyan); box-shadow: 0 0 0 4px rgba(110, 198, 255, 0.25); }
+      .pin3d.danger { border-left-color: #ff4d40; border-color: rgba(255, 77, 64, 0.5); }
+      .pin3d.danger::before { background: #ff4d40; box-shadow: 0 0 0 4px rgba(255, 77, 64, 0.3); }
+      .pin3d .pt { font-size: 12px; font-weight: 600; color: #fff; line-height: 1.3; }
+      .pin3d .ps { font-size: 11px; color: var(--muted); line-height: 1.35; margin-top: 2px; }
+
+      /* 明五暗四拆解层标签 */
+      .lbl {
+        position: fixed;
+        left: 0;
+        top: 0;
+        transform: translate(0, -50%);
+        font-size: 12px;
+        color: var(--fg);
+        background: rgba(18, 15, 12, 0.8);
+        padding: 3px 9px 3px 7px;
+        border-left: 3px solid var(--gold);
+        border-radius: 4px;
+        pointer-events: none;
+        white-space: nowrap;
+        opacity: 0;
+        transition: opacity 0.2s;
+        z-index: 9;
+      }
+      .lbl.dark { border-left-color: var(--cyan); }
+      .lbl.spire { border-left-color: #b5b5b5; }
+      .lbl small { color: var(--muted); margin-left: 6px; }
+
+      /* ---------- 电影字幕与全片进度条 ---------- */
+      #cinemaBar {
+        position: fixed;
+        left: 50%;
+        bottom: 18px;
+        transform: translateX(-50%);
+        z-index: 16;
+        width: min(680px, calc(100vw - 32px));
+        background: var(--panel-strong);
+        backdrop-filter: blur(12px);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 10px 16px 12px;
+        text-align: center;
+        box-shadow: 0 10px 32px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s, bottom 0.3s;
+      }
+      #cinemaBar.show {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      #cinemaBar.above-tl {
+        bottom: 176px;
+      }
+      #cinemaText {
+        font-size: 13.5px;
+        color: #f9f4eb;
+        line-height: 1.55;
+        letter-spacing: 0.03em;
+      }
+      .cinema-prog {
+        height: 3px;
+        background: rgba(255, 255, 255, 0.14);
+        border-radius: 2px;
+        margin-top: 8px;
+        overflow: hidden;
+      }
+      #cinemaFill {
+        height: 100%;
+        width: 0%;
+        background: linear-gradient(90deg, var(--gold), #ff7b54);
+        transition: width 0.1s linear;
+      }
+
+      /* ---------- 倾斜时间轴面板 ---------- */
+      #tl {
+        position: fixed;
+        left: 50%;
+        bottom: 14px;
+        transform: translateX(-50%);
+        z-index: 15;
+        width: min(760px, calc(100vw - 32px));
+        color: var(--fg);
+        background: var(--panel);
+        backdrop-filter: blur(12px);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 10px 14px 12px;
+        font-size: 12px;
+        box-shadow: 0 10px 32px rgba(0, 0, 0, 0.42);
+        transition: opacity 0.25s, transform 0.25s;
+      }
+      #tl .head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+      #tl .year { font-size: 22px; font-weight: 600; color: var(--gold); font-variant-numeric: tabular-nums; letter-spacing: 0.02em; }
+      #tl .read { color: var(--muted); font-variant-numeric: tabular-nums; }
+      #tl .read b { color: var(--fg); font-weight: 600; }
+      #tl .ctrl { margin-left: auto; display: flex; gap: 6px; flex-wrap: wrap; }
+      #tl button {
+        background: rgba(255, 255, 255, 0.12);
+        color: var(--fg);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 6px;
+        padding: 3px 8px;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      #tl button.on { background: rgba(229, 185, 104, 0.42); border-color: var(--gold); color: #fff; }
+      #tl .track { position: relative; height: 64px; margin-top: 6px; }
+      #tl svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+      #tl input[type=range] { position: absolute; left: 0; right: 0; bottom: -4px; width: 100%; margin: 0; accent-color: var(--gold); }
+      #tl.folded .track, #tl.folded .event { display: none; }
+      #tl .event { color: var(--muted); margin-top: 8px; min-height: 2.8em; line-height: 1.45; }
+      #tl .event .tag { display: inline-block; font-size: 11px; padding: 0 5px; border-radius: 3px; margin-right: 6px; background: rgba(255, 255, 255, 0.15); color: var(--fg); }
+      #tl .event .tag.measured { background: rgba(110, 190, 120, 0.45); }
+      #tl .event .tag.est, #tl .event .tag.future { background: rgba(214, 170, 96, 0.45); }
+
+      /* 悬停造像提示 */
+      #tip {
+        position: fixed;
+        pointer-events: none;
+        z-index: 30;
+        color: var(--fg);
+        background: rgba(16, 13, 10, 0.9);
+        border: 1px solid var(--border);
+        border-left: 3px solid var(--gold);
+        border-radius: 6px;
+        padding: 7px 11px;
+        font-size: 12px;
+        line-height: 1.5;
+        max-width: 260px;
+        opacity: 0;
+        transition: opacity 0.15s;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+      }
+      #tip b { font-size: 14px; color: var(--gold-bright); }
+      #tip .m { color: var(--muted); }
+
+      /* ---------- 现场实拍档案照片卡片与高清灯箱 (On-Site Photo Lightbox) ---------- */
+      .ref-photo-card {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 9px;
+        padding: 7px 9px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(229, 185, 104, 0.35);
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .ref-photo-card:hover {
+        background: rgba(229, 185, 104, 0.16);
+        border-color: var(--gold-bright);
+      }
+      .ref-photo-card img {
+        width: 58px;
+        height: 58px;
+        object-fit: cover;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        flex-shrink: 0;
+      }
+      .ref-photo-meta {
+        flex: 1;
+        min-width: 0;
+      }
+      .ref-photo-tag {
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--gold-bright);
+        font-weight: 600;
+      }
+      .ref-photo-title {
+        font-size: 12px;
+        font-weight: 600;
+        color: #fff;
+        margin-top: 2px;
+        line-height: 1.3;
+      }
+      .ref-photo-hint {
+        font-size: 10.5px;
+        color: var(--muted);
+        margin-top: 2px;
+      }
+
+      #photoModal {
+        position: fixed;
+        inset: 0;
+        z-index: 95;
+        background: rgba(8, 7, 6, 0.88);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.22s ease;
+      }
+      #photoModal.open {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .pm-box {
+        position: relative;
+        max-width: min(960px, 92vw);
+        max-height: 86vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(18, 15, 12, 0.95);
+        border: 1px solid rgba(229, 185, 104, 0.45);
+        border-radius: 14px;
+        padding: 14px 18px 16px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.75);
+      }
+      .pm-close {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        background: rgba(255, 255, 255, 0.12);
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 8px;
+        padding: 4px 10px;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      .pm-close:hover { background: rgba(229, 185, 104, 0.35); border-color: var(--gold); }
+      #pmImg {
+        max-width: 100%;
+        max-height: 62vh;
+        object-fit: contain;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+      }
+      #pmTitle {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--gold-bright);
+        margin-top: 10px;
+        text-align: center;
+      }
+      #pmSub {
+        font-size: 12.5px;
+        color: var(--muted);
+        margin-top: 4px;
+        text-align: center;
+        max-width: 720px;
+        line-height: 1.45;
+      }
+      .pm-strip {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .pm-thumb-btn {
+        background: rgba(255, 255, 255, 0.08);
+        color: var(--muted);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 6px;
+        padding: 4px 9px;
+        font-size: 11px;
+        cursor: pointer;
+      }
+      .pm-thumb-btn.active, .pm-thumb-btn:hover {
+        background: rgba(229, 185, 104, 0.32);
+        color: #fff;
+        border-color: var(--gold);
+      }
+
+
+      /* ---------- Simplified layout ---------- */
+      .director-actions { gap: 5px; }
+      #ui { width: min(340px, calc(100vw - 32px)); max-height: calc(100vh - 150px); }
+      #ui.compact #storySummary,
+      #ui.compact .step-nav-row,
+      #ui.compact details.sandbox-box,
+      #ui.compact .ref-photo-card { display: none; }
+      .cmp-rows { margin: 8px 0 2px; font-size: 12px; line-height: 1.7; color: var(--muted); }
+      .cmp-rows b { color: var(--fg); font-weight: 600; }
+      details.sandbox-box { margin-top: 12px; }
+      /* timeline: collapsed shows only year + a Timeline button */
+      #tl.folded .tl-more { display: none; }
+      #tl.folded .read { display: none; }
+      #tl.folded { width: auto; padding: 6px 12px; }
+      #tl.folded .head { gap: 10px; }
+      #tl.folded .year { font-size: 16px; }
+      html[lang="zh-CN"] .brand-title { letter-spacing: 0.18em; }
+
+      @media (max-width: 1400px) {
+        .brand-sub { display: none; }
+        .brand-title { font-size:15px;white-space:nowrap; }
+        .brand-box { flex-shrink:0;padding:8px 10px; }
+        #chapterTabs { min-width:0; }
+      }
+      @media (max-width: 860px) {
+        #topBar { flex-wrap: wrap; gap: 6px; top: 8px; left: 8px; right: 8px; }
+        .brand-box { padding: 5px 10px; order: 1; flex: 1; min-width: 0; }
+        .brand-title { font-size: 15px; }
+        .director-actions { order: 2; padding: 4px 6px; }
+        .director-actions .btn-icon, .director-actions .btn-gold { padding: 5px 8px; font-size: 12px; }
+        #chapterTabs { order: 3; width: 100%; overflow-x: auto; scrollbar-width: none; }
+        #chapterTabs::-webkit-scrollbar { display: none; }
+        #ui { left: 8px; right: 8px; top: 104px; width: auto; max-height: 42vh; padding: 12px 14px; }
+        #tl { bottom: 8px; width: calc(100vw - 16px); }
+        #tl .ctrl { margin-left: 0; }
+      }
+      #sectionPanel { position:fixed;right:22px;bottom:95px;z-index:25;width:min(330px,calc(100vw - 32px));padding:18px;color:var(--fg);border:1px solid var(--border);border-radius:14px;background:rgba(18,15,12,.9);backdrop-filter:blur(12px); }
+      #sectionPanel[hidden] { display:none; }
+      .section-heading { display:flex;justify-content:space-between;align-items:center;font-size:14px; }
+      #sectionClose { border:0;background:none;color:var(--muted);font-size:24px;cursor:pointer; }
+      #sectionPanel p { color:var(--muted);font-size:12px;line-height:1.8;margin:10px 0 16px; }
+      .section-floors { display:flex;gap:5px;flex-wrap:wrap; }
+      .section-floors button { cursor:pointer;border:1px solid var(--border);border-radius:7px;background:transparent;color:var(--muted);padding:7px 10px; }
+      .section-floors button.on { color:#21180b;background:var(--gold); }
+      @media(max-width:860px) { #sectionPanel {right:16px;bottom:85px;width:285px;padding:12px;} #sectionPanel p{margin:6px 0 9px;font-size:11px;} }
+    </style>
+  </head>
+  <body>
+    <div id="loading">
+      <div class="brand" data-i18n="brand.title">YINGXIAN WOODEN PAGODA</div>
+      <div class="sub" data-i18n="loading.sub">Sakyamuni Pagoda of Fogong Temple · Built 1056 AD · 3D Interactive Documentary</div>
+      <div class="bar"></div>
+    </div>
+
+    <div id="tip"></div>
+    <div id="pinsContainer" aria-live="polite"></div>
+
+    <!-- On-Site Archival Photograph Lightbox Modal -->
+    <div id="photoModal" role="dialog" aria-modal="true" aria-label="On-Site Archival Photograph">
+      <div class="pm-box">
+        <button class="pm-close" id="pmCloseBtn" data-i18n="photo.close">✕ Close (Esc)</button>
+        <img id="pmImg" src="./ref/floor1_statue.jpg" alt="On-site reference photograph" />
+        <div id="pmTitle"></div>
+        <div id="pmSub"></div>
+        <div class="pm-strip" id="pmStrip"></div>
+      </div>
+    </div>
+
+    <!-- Top bar: brand · chapters · four actions -->
+    <header id="topBar">
+      <div class="top-box brand-box">
+        <div class="brand-seal">1056</div>
+        <div>
+          <div class="brand-title" data-i18n="brand.title">Yingxian Wooden Pagoda</div>
+          <div class="brand-sub" data-i18n="brand.sub">Sakyamuni Pagoda · Built 1056 AD (Liao Dynasty)</div>
+          <a href="./statues.html" style="display:inline-block;margin-top:5px;font-size:11px;color:var(--gold);text-decoration:none">造像对照册 ↗</a>
+        </div>
+      </div>
+
+      <nav class="top-box" id="chapterTabs" aria-label="Chapter Navigation"></nav>
+
+      <div class="top-box director-actions">
+        <button id="playDocBtn" class="btn-gold" data-i18n="btn.play" data-i18n-title="btn.play.title">▶ Tour</button>
+        <button id="topStatueBtn" class="btn-icon" data-i18n="btn.buddhas" data-i18n-title="btn.buddhas.title">✨ Buddhas Ascend</button>
+        <button id="sectionBtn" class="btn-icon" aria-pressed="false" data-i18n="btn.section" data-i18n-title="btn.section.title">◐ Section View</button>
+        <button id="compareBtn" class="btn-icon" data-i18n="btn.compare" data-i18n-title="btn.compare.title">🗼 Compare</button>
+        <button id="langBtn" class="btn-icon" data-i18n="lang.toggle" data-i18n-title="lang.title">中文</button>
+        <button id="toggleUiBtn" class="btn-icon on" data-i18n="btn.panel" data-i18n-title="btn.panel.title">Panel</button>
+      </div>
+    </header>
+
+    <!-- Left card: story text + per-chapter controls -->
+    <aside id="ui">
+      <div class="ch-kicker">
+        <span id="storyChapterLabel">0 · Prologue</span>
+        <span id="storyStepCounter">1 / 1</span>
+      </div>
+      <h1 id="storyTitle">Sacred Timber Sanctuary · A Millennium of Vigil</h1>
+      <p id="storySummary"></p>
+
+      <div class="step-nav-row">
+        <button id="prevStepBtn" class="step-nav-btn" data-i18n="nav.prev">◀ Prev</button>
+        <button id="nextStepBtn" class="step-nav-btn" data-i18n="nav.next">Next ▶</button>
+      </div>
+
+      <!-- Per-chapter controls (statue cards / structure / tilt / tower comparison) -->
+      <div id="chapterExtra"></div>
+
+      <!-- Everything else, tucked away -->
+      <details class="sandbox-box">
+        <summary data-i18n="tools.summary">More tools</summary>
+        <div class="row" id="views"></div>
+        <div class="row">
+          <button id="rotate" class="tool-btn" data-i18n="tools.orbit">Auto Orbit</button>
+          <button id="xrayBtn" class="tool-btn" data-i18n="tools.xray">X-Ray Frame</button>
+          <button id="ao" class="tool-btn on" data-i18n="tools.ao">Ambient Occlusion</button>
+          <button id="time" class="tool-btn">Time: Noon</button>
+        </div>
+        <div class="row" style="align-items:center">
+          <button id="explodeBtn" class="tool-btn" data-i18n="tools.explode">9-Layer Explode</button>
+          <input id="explode" type="range" min="0" max="1" step="0.01" value="0" style="flex:1;min-width:80px;accent-color:var(--gold)" aria-label="Layer explosion factor" />
+        </div>
+        <div class="row">
+          <button id="audioBtn" class="tool-btn" data-i18n="tools.chimes">🔔 Chimes</button>
+          <button id="voiceBtn" class="tool-btn" data-i18n="tools.voiceOff">🎙 Voice: OFF</button>
+        </div>
+        <div id="stats"></div>
+      </details>
+    </aside>
+
+    <!-- Cinematic Subtitle & Progress Bar -->
+    <div id="cinemaBar">
+      <div id="cinemaText"></div>
+      <div class="cinema-prog"><div id="cinemaFill"></div></div>
+    </div>
+
+    <aside id="sectionPanel" hidden aria-label="剖切看佛">
+      <div class="section-heading"><b data-i18n="section.title">Statues inside the pagoda</b><button id="sectionClose" aria-label="关闭剖切">×</button></div>
+      <p data-i18n="section.note">Only the near half of the architecture is cut away. Statues stay in place. Drag to rotate the view.</p>
+      <div class="section-floors">
+        <button data-section-floor="0" class="on" data-i18n="section.all">All floors</button>
+        <button data-section-floor="1">1F</button><button data-section-floor="2">2F</button><button data-section-floor="3">3F</button><button data-section-floor="4">4F</button><button data-section-floor="5">5F</button>
+      </div>
+    </aside>
+    <!-- Structural Tilt Timeline (1056–2300 AD) -->
+    <div id="tl" class="folded" aria-label="Tilt Timeline">
+      <div class="head">
+        <span class="year" id="tlYear">2026</span>
+        <span class="read" id="tlRead"></span>
+        <span class="ctrl">
+          <span class="tl-more">
+            <button id="tlPlay" data-i18n="tl.play">▶ Play</button>
+            <span style="align-self:center;color:var(--muted)" data-i18n="tl.creep">Creep</span>
+            <button data-rate="2" class="on">2 mm/yr</button>
+            <button data-rate="3">3 mm/yr</button>
+            <span style="align-self:center;color:var(--muted)" data-i18n="tl.scale">Scale</span>
+            <button data-mult="1" class="on">×1</button>
+            <button data-mult="5">×5</button>
+            <button data-mult="10">×10</button>
+          </span>
+          <button id="tlFold" data-i18n="tl.expand">Timeline</button>
+        </span>
+      </div>
+      <div class="track">
+        <svg id="tlChart" aria-hidden="true"></svg>
+        <input id="tlSlider" type="range" min="0" max="1000" step="1" value="0" aria-label="Year" />
+      </div>
+      <div class="event" id="tlEvent"></div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
