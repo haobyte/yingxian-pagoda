@@ -1,37 +1,84 @@
-# 应县木塔 · 完整三维交互原版
+# Yingxian Wooden Pagoda · Interactive 3D
 
-计划地址（当前已撤下）：https://haobyte.github.io/yingxian-pagoda/
+I rebuilt a 970-year-old wooden pagoda as an interactive 3D scene with Three.js + Vite.
 
-当前仅整理发布分支，尚未提交、推送或上线。
+**Yingxian Wooden Pagoda: built in 1056, 67 m tall (~22 stories), entirely wood.**
+~2.85M triangles, 26 Buddha GLB models, 93 MB. 18 days, 21 iterations.
 
-本分支发布包含 **26 尊真实 GLB 资产**的完整版，保留原项目的塔体、屋面、斗拱、场地、材质、阴影、镜头和交互。不是使用造像图卡的小红书轻量版。
+**[Live demo → haobyte.github.io/yingxian-pagoda](https://haobyte.github.io/yingxian-pagoda/)** · [Statue atlas](https://haobyte.github.io/yingxian-pagoda/statues.html)
 
-支持自由旋转、九层拆解、核心柱网、剖切逐层看佛、万佛出塔、三塔对比、倾斜时间轴、中英文切换，以及独立造像对照册。对照册包含26尊GLB及AI现貌、推测复原的分列展示；“真实照片”一栏因来源待核实，公开版暂缺。
+![Yingxian Pagoda overview](docs/images/overview.jpg)
 
-## 开发与部署
+The pagoda (Sakyamuni Pagoda of Fogong Temple, Yingxian, Shanxi) is the oldest and tallest surviving all-timber pagoda in the world. From outside it shows five floors; inside there are nine structural layers: five bright worship halls and four hidden braced rings. The scene models all of it, plus the 26 Liao-dynasty statues the pagoda houses.
 
-需要 Node.js 22+。运行 `npm ci`、`npm run build`、`npm run check`。
+## Features
 
-`npm run preview` 打开本地预览。`npm test` 检查完整版主场景和所有模型；`npm run test:atlas` 单独检查对照页的26个模型，适合云端软件渲染环境。测试前运行 `npx playwright install chromium`；本机也可以用 `CHROME_PATH` 指定Chrome。`BASE_URL` 可指定线上测试地址。
+- **Free orbit** around the whole pagoda and its courtyard.
+- **Nine-layer explosion** that pulls apart the five bright floors and four hidden rings.
+- **Core column grid**: a see-through skeleton of columns, beams and brackets, with a top-down view of the double octagonal column ring.
+- **Section view**: the building is cut away layer by layer while the 26 statues stay in place.
+- **Tilt timeline**: the pagoda leans to the north-east; step through the years to see it.
+- **Three-tower comparison** for scale.
+- **Statue atlas** (`statues.html`): every statue with its AI "present condition" reference, AI "restoration hypothesis", and a rotatable GLB model.
+- English and Chinese UI, desktop and mobile.
 
-GitHub Actions仅从main构建和发布dist。模型本体与原项目正式运行资源逐字节一致；`data/model-integrity.json` 固定26个模型摘要，检查同时拒绝图卡轻量版内容。相对资源路径使主页和对照页兼容Pages项目子目录。
+## Quick start
 
-`codex/opensource` 是独立公开分支，不包含原开发仓库的提交历史、旅行录像、原始生成实验或本机配置。旧的小红书误发版本已撤下，当前树完整替换为原版。后续只选择性同步需要公开的文件，不合并原master，不使用push --all/--mirror。
+Requires Node.js 22+.
 
-## 资源与边界
+```bash
+npm ci
+npm run dev        # http://127.0.0.1:5184
+```
 
-- `src/`：原版运行代码；部署适配仅增加资源前缀处理。
-- `static/models/statues/`：26个正式GLB及来源记录，约93MB。
-- `static/ref/`、`static/plaques/`：原版使用的照片与匾额。
-- `static/comparison/`：对照册指定素材；不公开整个实验目录。
-- `data/comparison.json`、`docs/asset-provenance.json`：来源映射、原文件摘要。来源JSON中本机绝对路径已移除，图像与模型不重新生成。
+Other scripts:
 
-AI生成模型不等于实物测绘，遮挡细节、缺失部件与部分造像身份仍有不确定性；推测复原不能当作已经证实的历史原貌。原始参考照片、AI图和三维模型保持分列标识。
+| Command | What it does |
+| --- | --- |
+| `npm run build` | Production build to `dist/` |
+| `npm run check` | Verifies the build: 26 models present and byte-identical to the recorded hashes |
+| `npm run preview` | Serves `dist/` locally |
+| `npm test` | Browser smoke test of the main scene and all models (needs Playwright) |
+| `npm run test:atlas` | Same, for the statue atlas only (works with software rendering) |
 
-Three.js 和 Vite 均为 MIT 许可。页面首次加载会下载约93MB模型，实际速度与设备性能取决于访问环境。
+For tests run `npx playwright install chromium` first. Set `CHROME_PATH` to use a local Chrome, or `BASE_URL` to test a deployed site.
 
-## 许可
+The site uses relative asset paths, so it works under a GitHub Pages sub-path. A GitHub Actions workflow builds, checks and deploys `main` to Pages.
 
-- 代码：[MIT](LICENSE)。
-- 自有素材（26 个 GLB、AI 参考图、作者自拍照片）：[CC BY-NC 4.0](LICENSE-ASSETS.md)，需署名，禁止商用。模型和参考图由 AI 生成，详见该文件的 AI 生成声明。
-- 第三方素材不受上述许可约束，需按各自来源条款使用：一层释迦牟尼佛正面照为 CC BY-SA 4.0（Patrick20242023，Wikimedia Commons）；陈明达《应县木塔》图版、展板和测绘图转摄照片、对照册中来源未登记的26张造像照片，因授权未核实，已从公开版移除。
+## Project layout
+
+```
+index.html, statues.html    Entry pages (main scene, statue atlas)
+src/main.js                 UI, camera, interaction
+src/pagoda.js, builders/    Pagoda structure and statue loading
+src/section-view.js         Section view
+src/timeline.js, deform.js  Tilt history
+src/statues-data.js         Runtime config for the 26 statues
+static/models/statues/      26 statue GLBs + per-model source records
+static/comparison/          Atlas images (AI reference images) + source records
+static/ref/, plaques/       On-site photos and plaque textures
+data/                       Atlas catalogue, model integrity hashes
+docs/                       Asset provenance
+tools/                      Build checks and browser tests
+```
+
+## About the data and the models
+
+- Dimensions and structure follow published surveys and on-site observation. They are a visualization, not a survey-grade model.
+- The 26 statue models were generated from AI reference images with Tripo and are used as-is: missing parts (for example a complete lion or elephant mount) are not added. The generated shapes are not measured geometry, and some statue identities remain uncertain.
+- The atlas is deliberately split into three kinds of material that should not be confused: an AI "present condition" reconstruction, an AI "restoration hypothesis" (a guess at the pre-weathering appearance, not a confirmed Liao-dynasty original), and the 3D model.
+- The "photograph" column of the atlas is empty in this public release. The reference photos used to generate the AI images have no recorded source and could not be cleared for redistribution, so they were removed. The AI images themselves were generated from those photos.
+- The first load downloads about 93 MB of models.
+
+## License
+
+- **Code**: [MIT](LICENSE).
+- **Own assets** (26 GLB models, AI reference images, the author's on-site photos): [CC BY-NC 4.0](LICENSE-ASSETS.md). Attribution required, no commercial use. The models and images are AI-generated; see the notice in that file.
+- **Third-party material** is not covered by the licenses above. The first-floor Sakyamuni front photograph is by Patrick20242023 on Wikimedia Commons, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- Built with [Three.js](https://threejs.org/) and [Vite](https://vite.dev/), both MIT.
+
+Provenance records for each model and image are in `static/models/statues/*.source.json`, `static/comparison/*.json` and `docs/asset-provenance.json`.
+
+## Issues
+
+Corrections to the history, dimensions or statue identification are welcome — please open an issue with a source.
